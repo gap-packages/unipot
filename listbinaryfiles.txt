@@ -1,0 +1,5 @@
+unipot/doc/manual.pdf
+unipot/doc/manual.toc
+unipot/doc/manual.ps
+unipot/doc/manual.dvi
+unipot/doc/manual.lab

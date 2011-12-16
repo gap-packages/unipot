@@ -1,0 +1,13 @@
+unipot/init.g
+unipot/read.g
+unipot/README
+unipot/PackageInfo.g
+unipot/doc/manual.tex
+unipot/doc/install.tex
+unipot/doc/unipot.tex
+unipot/doc/gapmacro.tex
+unipot/doc/manual.six
+unipot/doc/preface.tex
+unipot/lib/unipot.gi
+unipot/lib/unipot.gd
+unipot/lib/banner.g
