@@ -1,12 +1,17 @@
 ################################################################################
 ##
-#W  read.g                  share package 'unipot'                 Sergei Haller
+#W  read.g                      UNIPOT package                     Sergei Haller
 ##
-##  @(#)$Id: read.g,v 2.0 2000/05/31 12:24:12 gc1007 Exp $
+##  @(#)$Id: read.g,v 2.6 2004/11/16 16:41:31 gc1007 Exp $
+##
+#Y  Copyright (C) 2000-2004, Sergei Haller
+#Y  Arbeitsgruppe Algebra, Justus-Liebig-Universitaet Giessen
 ##
 
 # read the implementation part.
-ReadPkg( "unipot", "lib/unipot.gi");
+ReadPackage( "unipot", "lib/rootsys.gi");
+ReadPackage( "unipot", "lib/unipot.gi");
+ReadPackage( "unipot", "lib/newstuff.gi");
 
 ################################################################################
 ##

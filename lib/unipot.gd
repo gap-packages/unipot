@@ -1,10 +1,13 @@
 ################################################################################
 ##
-#W  unipot.gd               share package `unipot'                 Sergei Haller
+#W  unipot.gd                   UNIPOT package                     Sergei Haller
 ##
-#H  @(#)$Id: unipot.gd,v 2.0 2000/05/31 12:23:50 gc1007 Exp $
+#H  @(#)$Id: unipot.gd,v 2.7 2004/11/16 16:41:31 gc1007 Exp $
 ##
-##  This is the declaration part of the share package
+#Y  Copyright (C) 2000-2004, Sergei Haller
+#Y  Arbeitsgruppe Algebra, Justus-Liebig-Universitaet Giessen
+##
+##  This is the declaration part of the package
 ##
 
 ################################################################################
@@ -24,7 +27,7 @@ DeclareCategory("IsUnipotChevFamily", IsFamily);
 ##  Category of elements of a unipotent subgroup of a Chevalley group.
 ##
 
-DeclareCategory("IsUnipotChevElem", IsMultiplicativeElementWithInverse);
+DeclareCategory( "IsUnipotChevElem", IsMultiplicativeElementWithInverse );
 DeclareCategoryCollections( "IsUnipotChevElem" );
 
 ################################################################################
@@ -34,7 +37,7 @@ DeclareCategoryCollections( "IsUnipotChevElem" );
 ##  Category of unipotent subgroups of a Chevalley group.
 ##
 
-DeclareCategory("IsUnipotChevSubGr", IsGroup and IsUnipotChevElemCollection );
+DeclareCategory( "IsUnipotChevSubGr", IsGroup and IsUnipotChevElemCollection );
 
 ################################################################################
 ##
@@ -70,28 +73,28 @@ DeclareGlobalFunction( "UnipotChevSubGr" );
 
 ################################################################################
 ##
-#O  UnipotChevElem(                    <U>, <list> )  . . . . . . `undocumented'
+#O  UnipotChevElem(                    <U>, <list>, <list> )  . . `undocumented'
 ##
-#O  UnipotChevElemByRootNumbers(       <U>, <list> )
-#O  UnipotChevElemByRN(                <U>, <list> )
+#O  UnipotChevElemByRootNumbers(       <U>, <list>, <list> )
+#O  UnipotChevElemByRN(                <U>, <list>, <list> )
 ##
-#O  UnipotChevElemByFundamentalCoeffs( <U>, <list> )
-#O  UnipotChevElemByFC(                <U>, <list> )
+#O  UnipotChevElemByFundamentalCoeffs( <U>, <list>, <list> )
+#O  UnipotChevElemByFC(                <U>, <list>, <list> )
 ##
-#O  UnipotChevElemByRoots(             <U>, <list> )
-#O  UnipotChevElemByR(                 <U>, <list> )
+#O  UnipotChevElemByRoots(             <U>, <list>, <list> )
+#O  UnipotChevElemByR(                 <U>, <list>, <list> )
 ##
 ##  Returns an element of a unipotent subgroup of a Chevalley group
 ##
 
 DeclareOperation( "UnipotChevElem",                    
-                                             [ IsUnipotChevSubGr, IsList ] );
+                         [ IsUnipotChevSubGr, IsRecord, IS_OPERATION ] );
 DeclareOperation( "UnipotChevElemByRootNumbers",       
-                                             [ IsUnipotChevSubGr, IsList ] );
+                         [ IsUnipotChevSubGr, IsList, IsList ] );
 DeclareOperation( "UnipotChevElemByFundamentalCoeffs", 
-                                             [ IsUnipotChevSubGr, IsList ] );
+                         [ IsUnipotChevSubGr, IsList, IsList ] );
 DeclareOperation( "UnipotChevElemByRoots",             
-                                             [ IsUnipotChevSubGr, IsList ] );
+                         [ IsUnipotChevSubGr, IsList, IsList ] );
 
 DeclareSynonym( "UnipotChevElemByRN", UnipotChevElemByRootNumbers       );
 DeclareSynonym( "UnipotChevElemByFC", UnipotChevElemByFundamentalCoeffs );
@@ -101,8 +104,6 @@ DeclareSynonym( "UnipotChevElemByR" , UnipotChevElemByRoots             );
 ################################################################################
 ##
 #A  CanonicalForm( <x> )  . . . . . . . . . canonical form of a `UnipotChevElem'
-##
-##  computes the canonical form of a ... as shown in Carter...
 ##
 ##  `CanonicalForm' returns the canonical form of <x>. 
 ##  For more information on the canonical form see [Car72], Theorem 5.3.3 (ii).
@@ -131,9 +132,11 @@ DeclareProperty( "IsRootElement",
                     IsUnipotChevElem
 	        ) ;
 
+
+
 ################################################################################
 ##
-#I  UnipotChevInfo  . . . . . . . . . . . . . . . . . . . . . . . . . InfoClass
+#V  UnipotChevInfo  . . . . . . . . . . . . . . . . . . . . . . . . . InfoClass
 ##
 ##  `UnipotChevInfo' is an `InfoClass' used in this package. `InfoLevel' of
 ##  this `InfoClass' is set to 1 by default.
