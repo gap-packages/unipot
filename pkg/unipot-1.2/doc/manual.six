@@ -1,0 +1,63 @@
+C preface.tex 1. Preface
+I 1.0. Unipot
+S 1.1. Root Systems
+S 1.2. Citing Unipot
+C unipot.tex 2. The GAP Package Unipot
+S 2.1. General functionality
+F 2.1. UnipotChevInfo
+S 2.2. Unipotent subgroups of Chevalley groups
+F 2.2. IsUnipotChevSubGr
+F 2.2. UnipotChevSubGr
+F 2.2. PrintObj!for `UnipotChevSubGr'
+F 2.2. ViewObj!for `UnipotChevSubGr'
+F 2.2. One!for `UnipotChevSubGr'
+F 2.2. OneOp!for `UnipotChevSubGr'
+F 2.2. Size!for `UnipotChevSubGr'
+F 2.2. RootSystem!for `UnipotChevSubGr'
+F 2.2. PositiveRootsFC
+F 2.2. NegativeRootsFC
+F 2.2. GeneratorsOfGroup!for `UnipotChevSubGr'
+F 2.2. Representative
+F 2.2. CentralElement
+S 2.3. Elements of unipotent subgroups of Chevalley groups
+F 2.3. IsUnipotChevElem
+F 2.3. IsUnipotChevRepByRootNumbers
+F 2.3. IsUnipotChevRepByFundamentalCoeffs
+F 2.3. IsUnipotChevRepByRoots
+F 2.3. UNIPOT_DEFAULT_REP
+F 2.3. UnipotChevElemByRootNumbers
+F 2.3. UnipotChevElemByRootNumbers
+F 2.3. UnipotChevElemByRN
+F 2.3. UnipotChevElemByRN
+F 2.3. UnipotChevElemByFundamentalCoeffs
+F 2.3. UnipotChevElemByFundamentalCoeffs
+F 2.3. UnipotChevElemByFC
+F 2.3. UnipotChevElemByFC
+F 2.3. UnipotChevElemByRoots
+F 2.3. UnipotChevElemByRoots
+F 2.3. UnipotChevElemByR
+F 2.3. UnipotChevElemByR
+F 2.3. UnipotChevElemByRootNumbers!element conversion
+F 2.3. UnipotChevElemByFundamentalCoeffs!element conversion
+F 2.3. UnipotChevElemByRoots!element conversion
+F 2.3. CanonicalForm
+F 2.3. PrintObj!for `UnipotChevElem'
+F 2.3. ViewObj!for `UnipotChevElem'
+F 2.3. ShallowCopy!for `UnipotChevElem'
+F 2.3. Equality!for UnipotChevElem
+I 2.3. \\=
+F 2.3. Less than!for UnipotChevElem
+I 2.3. \\\<
+F 2.3. Multiplication!for UnipotChevElem
+I 2.3. \\\*
+F 2.3. OneOp!for `UnipotChevElem'
+F 2.3. Inverse!for `UnipotChevElem'
+F 2.3. InverseOp!for `UnipotChevElem'
+F 2.3. IsOne
+F 2.3. Powers!of UnipotChevElem
+F 2.3. Conjugation!of UnipotChevElem
+F 2.3. Comm!for `UnipotChevElem'
+F 2.3. Comm!for `UnipotChevElem'
+F 2.3. IsRootElement
+F 2.3. IsCentral
+S 2.4. Symbolic computation

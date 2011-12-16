@@ -2,15 +2,23 @@
 %%
 %W  manual.tex             UNIPOT documentation             Sergei Haller
 %%
-%H  $Id: manual.tex,v 2.0 2000/05/31 12:23:30 gc1007 Exp $
+%H  $Id: manual.tex,v 2.6 2004/10/21 21:36:20 gc1007 Exp $
+%%
+%Y  Copyright (C) 2000-2002, Sergei Haller
+%Y  Arbeitsgruppe Algebra, Justus-Liebig-Universitaet Giessen
 %%
 %%
+
+%%  Define the GAP directory first. 
+%
+%
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
-%F  gapomacro . . . . . . . . . . . . . . . .  read the GAP macro package
+%F  gapmacro . . . . . . . . . . . . . . . .  read the GAP macro package
 %%
-%\input ../../../doc/gapmacro.tex
-\input gapmacro
+\input ../../../doc/gapmacro.tex
+\Package{Unipot}
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -24,9 +32,7 @@
 %%
 %F  UseReferences . . . . . . . . . . . . . . . . . .  specify references
 %%
-%\UseReferences{../../../doc/ext}
-%\UseReferences{../../../doc/ref}
-\UseReferences{/usr/local/lib/gap4r1/doc/ref}
+\UseReferences{../../../doc/ref}
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -34,15 +40,18 @@
 %F  TitlePage . . . . . . . . . . . . . . . . . . . . . . nice title page
 %%
 \TitlePage{
-  \centerline{\titlefont Share Package}\medskip
+  \centerline{\titlefont Unipot}\medskip
   \centerline{\titlefont ---}\medskip
-  \centerline{\titlefont Unipot}\vfill
+  \centerline{\titlefont A GAP4 Package}\bigskip
+  \centerline{\subtitlefont For Computations with elements of unipotent}\medskip
+  \centerline{\subtitlefont subgroups of Chevalley Groups}\bigskip
+  \centerline{\secfont Version 1.2}\vfill
   \centerline{\secfont by}\vfill
   \centerline{\secfont Sergei Haller}
   \centerline{\secfont (Sergei.Haller@math.uni-giessen.de)}\vfill
-  \centerline{\secfont Arbeitsgruppe Algebra}
-    \medskip
-  \centerline{\secfont Mathematisches Institut, Justus Liebig Universit\accent127 at Giessen}
+  \centerline{\secfont Arbeitsgruppe Algebra} \medskip
+  \centerline{\secfont Mathematisches Institut, 
+                       Justus-Liebig-Universit\accent127 at Gie{\ss}en}
   \centerline{\secfont Arndtstr. 2, 35392 Gie{\ss}en, Germany}
 }
 %
@@ -51,7 +60,7 @@
 %%
 %F  TableOfContents . . . . . . . . . . . .  generate a table of contents
 %%
-\TableOfContents
+\OneColumnTableOfContents
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -59,8 +68,7 @@
 %F  FrontMatter . . . . . . . . . . . . . . . . . . . . .  GAP 4 Tutorial
 %%
 \FrontMatter
-\immediate\write\citeout{\bs bibdata{sh}}
-\Input{preface}
+\immediate\write\citeout{\bs bibdata{./manual}}
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -68,6 +76,7 @@
 %F  Chapters  . . . . . . . . . . . . . . . . . . . . . .  GAP 4 Tutorial
 %%
 \Chapters
+\Input{preface}
 \Input{unipot}
 %
 %
@@ -75,8 +84,8 @@
 %%
 %F  Appendices  . . . . . . . . . . . .  Extending GAP 4 Reference Manual
 %%
-\Appendices
-\Input{install}
+%\Appendices
+%\Input{install}
 \Bibliography
 \Index
 %

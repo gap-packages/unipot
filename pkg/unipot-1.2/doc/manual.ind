@@ -1,0 +1,68 @@
+\letter {}
+  `\\=', 10
+  `\\\*', 10
+  `\\\<', 10
+\letter C
+  `CanonicalForm', 9
+  `CentralElement', 6
+  Citing Unipot, \indexit{3}
+  `Comm', for `UnipotChevElem', 11
+  Conjugation, of `UnipotChevElem', 11
+\letter E
+  Elements of unipotent subgroups of Chevalley groups, \indexit{6}
+  Equality, for `UnipotChevElem', 10
+\letter G
+  General functionality, \indexit{4}
+  `GeneratorsOfGroup', for `UnipotChevSubGr', 6
+\letter I
+  `Inverse', for `UnipotChevElem', 11
+  `InverseOp', for `UnipotChevElem', 11
+  `IsCentral', 12
+  `IsOne', 11
+  `IsRootElement', 11
+  `IsUnipotChevElem', 6
+  `IsUnipotChevRepByFundamentalCoeffs', 6
+  `IsUnipotChevRepByRootNumbers', 6
+  `IsUnipotChevRepByRoots', 6
+  `IsUnipotChevSubGr', 4
+\letter L
+  Less than, for `UnipotChevElem', 10
+\letter M
+  Multiplication, for `UnipotChevElem', 10
+\letter N
+  `NegativeRootsFC', 6
+\letter O
+  `One', for `UnipotChevSubGr', 5
+  `OneOp', for `UnipotChevElem', 11
+    \sub for `UnipotChevSubGr', 5
+\letter P
+  `PositiveRootsFC', 6
+  Powers, of `UnipotChevElem', 11
+  `PrintObj', for `UnipotChevElem', 9
+    \sub for `UnipotChevSubGr', 5
+\letter R
+  `Representative', 6
+  `RootSystem', for `UnipotChevSubGr', 5
+  Root Systems, \indexit{3}
+\letter S
+  `ShallowCopy', for `UnipotChevElem', 10
+  `Size', for `UnipotChevSubGr', 5
+  Symbolic computation, \indexit{12}
+\letter U
+  `Unipot', 3
+  `UNIPOT_DEFAULT_REP', 7
+  `UnipotChevElemByFC', 8
+  `UnipotChevElemByFundamentalCoeffs', 8
+    \sub element conversion, 9
+  `UnipotChevElemByR', 8
+  `UnipotChevElemByRN', 7
+  `UnipotChevElemByRootNumbers', 7
+    \sub element conversion, 9
+  `UnipotChevElemByRoots', 8
+    \sub element conversion, 9
+  `UnipotChevInfo', 4
+  `UnipotChevSubGr', 4
+  Unipotent subgroups of Chevalley groups, \indexit{4}
+\letter V
+  `ViewObj', for `UnipotChevElem', 9
+    \sub for `UnipotChevSubGr', 5

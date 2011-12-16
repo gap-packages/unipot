@@ -1,0 +1,22 @@
+\begin{thebibliography}{GAP04}
+
+\bibitem[Car89]{Carter72}
+Roger~W. Carter.
+\newblock {\em Simple groups of {L}ie type}.
+\newblock Wiley Classics Library. John Wiley \& Sons Inc., New York, 1989.
+\newblock Reprint of the 1972 original, A Wiley-Interscience Publication.
+
+\bibitem[GAP04]{GAP4}
+The GAP~Group, Aachen, St~Andrews.
+\newblock {\em {GAP -- Groups, Algorithms, and Programming, Version 4.4}},
+  2004.
+\newblock \URL{http://www.gap-system.org}.
+
+\bibitem[Hal00]{SH2000}
+Sergei Haller.
+\newblock {Entwicklung und Implementierung eines Algorithmus zur Berechnung von
+  Kommutatoren unipotenter Elemente in Chevalley-Gruppen}.
+\newblock Di\-plom\-ar\-beit, Mathe\-mati\-sches Insti\-tut,
+  Jus\-tus-Lie\-big-Uni\-ver\-si\-t{\"a}t Gie{\ss}en, April 2000.
+
+\end{thebibliography}
