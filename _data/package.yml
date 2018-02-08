@@ -1,48 +1,30 @@
-name: GitHubPagesForGAP
-version: 0.2
-date: 04/02/2017
+name: unipot
+version: 1.2
+date: 16/11/2004
 description: |
-    A GitHub Pages generator for GAP packages
+    Computing with elements of unipotent subgroups of Chevalley groups
 
 authors:
-    - name: Max Horn
-      url: http://www.quendi.de/math
-    - name: A. U. Thor
+    - name: Sergei Haller
+      url: http://www.sergei-haller.de
 
 maintainers:
-    - name: Max Horn
-      url: http://www.quendi.de/math
-    - name: Jan Itor
+    - name: Sergei Haller
+      url: http://www.sergei-haller.de
 
-GAP: ">=4.8.1"
+GAP: ">=4.4"
 
-needed-pkgs:
-    - name: "GAPDoc"
-      version: ">= 1.2"
-      url: "http://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc"
-    - name: "IO"
-      version: ">= 4.1"
-      url: "https://gap-packages.github.io/io"
-
-suggested-pkgs:
-    - name: "orb"
-      version: ">= 4.2"
-      url: "https://gap-packages.github.io/orb"
-
-www: https://gap-system.github.io/GitHubPagesForGAP/
-readme: README.md
-packageinfo: https://gap-system.github.io/GitHubPagesForGAP/PackageInfo.g
-github: https://github.com/gap-system/GitHubPagesForGAP
+www: http://www.uni-giessen.de/~gc1007/unipot/
+readme: README
+packageinfo: http://www.uni-giessen.de/~gc1007/unipot/PackageInfo.g
 
 downloads:
-    - name: .tar.gz
-      url: https://github.com/gap-system/GitHubPagesForGAP/releases/download/v0.2/GitHubPagesForGAP-0.2.tar.gz
     - name: .tar.bz2
-      url: https://github.com/gap-system/GitHubPagesForGAP/releases/download/v0.2/GitHubPagesForGAP-0.2.tar.bz2
+      url: http://www.uni-giessen.de/~gc1007/unipot/unipot-1.2.tar.bz2
 
 abstract: |
-    This is a pseudo package that contains no actual  <span class="pkgname">GAP</span> code. Instead, it is a template for other  GAP packages that allows to quickly setup GitHub Pages.
+    Tools for computing with elements of unipotent subgroups of Chevalley groups.
 
-status: other
-doc-html: doc/chap0.html
+status: deposited
+doc-html: htm/chapters.htm
 doc-pdf: doc/manual.pdf

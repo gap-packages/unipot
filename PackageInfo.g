@@ -1,102 +1,79 @@
-#############################################################################
+################################################################################
 ##  
-##  Demo PackageInfo.g for the GitHubPagesForGAP
+#W  PackageInfo.g            for the package `Unipot'              Sergei Haller
+##  
+#H  @(#)$Id: PackageInfo.g,v 2.8 2004/11/16 16:44:10 gc1007 Exp $
+## 
+#Y  Copyright (C) 2000-2004, Sergei Haller
+#Y  Arbeitsgruppe Algebra, Justus-Liebig-Universitaet Giessen
+##
+#N  With a new release of the package at least the entries .Version, .Date and
+#N  .ArchiveURL must be updated.
 ##
 
-SetPackageInfo( rec(
-
-PackageName := "GitHubPagesForGAP",
-
-Subtitle := "A GitHub Pages generator for GAP packages",
-Version := "0.2",
-Date := "04/02/2017", # dd/mm/yyyy format
-
-Persons := [
+SetPackageInfo( 
   rec(
-    LastName      := "Horn",
-    FirstNames    := "Max",
-    IsAuthor      := true,
-    IsMaintainer  := true,
-    Email         := "max.horn@math.uni-giessen.de",
-    WWWHome       := "http://www.quendi.de/math",
-    PostalAddress := Concatenation(
-                       "AG Algebra\n",
-                       "Mathematisches Institut\n",
-                       "Justus-Liebig-UniversitÃ¤t GieÃŸen\n",
-                       "ArndtstraÃŸe 2\n",
-                       "35392 GieÃŸen\n",
-                       "Germany" ),
-    Place         := "GieÃŸen",
-    Institution   := "Justus-Liebig-UniversitÃ¤t GieÃŸen"
-  ),
+    PackageName     := "unipot",
+    Subtitle        := "Computing with elements of unipotent subgroups of Chevalley groups",
+    Version         := "1.2",
+    Date            := "16/11/2004",
+    PackageWWWHome  := "http://www.uni-giessen.de/~gc1007/unipot/",
+    ArchiveURL      := Concatenation( ~.PackageWWWHome, "unipot-1.2"    ),
+    README_URL      := Concatenation( ~.PackageWWWHome, "README"        ),
+    PackageInfoURL  := Concatenation( ~.PackageWWWHome, "PackageInfo.g" ),
+    ArchiveFormats  := ".tar.bz2",
+    Status          := "deposited",
+    Persons := [
+      rec(
+        LastName      := "Haller",
+        FirstNames    := "Sergei",
+        IsAuthor      := true,
+        IsMaintainer  := true,
+        Email         := "Sergei.Haller@math.uni-giessen.de",
+        WWWHome       := "http://www.sergei-haller.de",
+        Place         := "Gießen",
+        Institution   := "Justus-Liebig-Universität Gießen",
+        PostalAddress := "Justus-Liebig-Universität Gießen\nMathematisches Institut\nArndtstraße 2\nD-35392 Gießen\nGermany",
+      )
+    ],
+    PackageDoc := rec(
+      BookName         := "unipot",
+      LongTitle        := "Computing with elements of unipotent subgroups of Chevalley groups",
+      ArchiveURLSubset := ["doc","htm"],
+      HTMLStart        := "htm/chapters.htm",
+      PDFFile          := "doc/manual.pdf",
+      SixFile          := "doc/manual.six",
+      Autoload         := true
+    ),
+    Dependencies := rec(
+      GAP                    := ">=4.4",
+      NeededOtherPackages    := [],
+      SuggestedOtherPackages := [],
+      ExternalConditions     := []
+    ),
+    AvailabilityTest := ReturnTrue,
+    AbstractHTML     := "Tools for computing with elements of unipotent subgroups of Chevalley groups.",
+    BannerString     := Concatenation( " /======================================================\\\n",
+                                       " !                                                      !\n",
+                                       " !                GAP Package UNIPOT ", ~.Version, "                !\n",
+                                       " !       (Computations with elements of unipotent       !\n",
+                                       " !             subgroups of Chevalley Groups)           !\n",
+                                       " !                                                      !\n",
+                                       " ! by ", ~.Persons[1].FirstNames, " ", ~.Persons[1].LastName, " <", ~.Persons[1].Email, "> !\n",
+                                       " !                                                      !\n",
+                                       " !                    see ??unipot                      !\n",
+                                       " \\======================================================/\n" ),
 
-  rec(
-    LastName      := "Thor",
-    FirstNames    := "A. U.",
-    IsAuthor      := true,
-    IsMaintainer  := false,
-    #Email         := "author@example.com",
-  ),
+    Keywords         := [ "Chevalley", "unipotent elements", "unipot" ],
+    TestFile         := "tst/littletest.tst",
 
-  rec(
-    LastName      := "Itor",
-    FirstNames    := "Jan",
-    IsAuthor      := false,
-    IsMaintainer  := true,
-    #Email         := "janitor@example.com",
-  ),
-],
+    # Change the following to `true' if you wish the package
+    # to be loaded automatically on every start of GAP
+    Autoload := false,
+  )
+);
 
-Status := "other",
-
-# The following are not strictly necessary in your own PackageInfo.g
-# (in the sense that update.g only looks at the usual fields
-# like PackageWWWHome, ArchiveURL etc.). But they are convenient
-# if you use exactly the scheme for your package website that we propose.
-GithubUser := "gap-system",
-GithubRepository := ~.PackageName,
-GithubWWW := Concatenation("https://github.com/", ~.GithubUser, "/", ~.GithubRepository),
-
-PackageWWWHome := Concatenation("https://", ~.GithubUser, ".github.io/", ~.GithubRepository, "/"),
-README_URL     := Concatenation( ~.PackageWWWHome, "README.md" ),
-PackageInfoURL := Concatenation( ~.PackageWWWHome, "PackageInfo.g" ),
-# The following assumes you are using the Github releases system. If not, adjust
-# it accordingly.
-ArchiveURL     := Concatenation(~.GithubWWW,
-                    "/releases/download/v", ~.Version, "/",
-                    ~.GithubRepository, "-", ~.Version),
-
-ArchiveFormats := ".tar.gz .tar.bz2",
-
-AbstractHTML := 
-  "This is a pseudo package that contains no actual\
-  <span class=\"pkgname\">GAP</span> code. Instead, it is a template for other\
-  GAP packages that allows to quickly setup GitHub Pages.",
-
-PackageDoc := rec(
-  BookName  := "GitHubPagesForGAP",
-  ArchiveURLSubset := ["doc"],
-  HTMLStart := "doc/chap0.html",
-  PDFFile   := "doc/manual.pdf",
-  SixFile   := "doc/manual.six",
-  LongTitle := "A GitHub Pages generator for GAP packages",
-),
-
-# The following dependencies are fake and for testing / demo purposes
-Dependencies := rec(
-  GAP := ">=4.8.1",
-  NeededOtherPackages := [
-    ["GAPDoc", ">= 1.2"],
-    ["IO", ">= 4.1"],
-  ],
-  SuggestedOtherPackages := [["orb", ">= 4.2"]],
-  ExternalConditions := []
-),
-
-AvailabilityTest := ReturnTrue,
-
-Keywords := ["GitHub Pages", "GAP"]
-
-));
-
-
+################################################################################
+##
+#E  PackageInfo.g  . . . . . . . . . . . . . . . . . . . . . . . . . . ends here
+##

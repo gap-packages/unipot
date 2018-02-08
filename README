@@ -1,0 +1,96 @@
+                        Installing UNIPOT
+                        -----------------
+
+This document describes the procedure of installing the package.
+
+Installing  `Unipot'  should be easy once you have installed GAP
+itself. We assume  here that you want to install `Unipot' in its
+standard  location, which  is in the `pkg' subdirectory  of  the
+main GAP4 installation.
+
+
+                           Overview
+                           --------
+
+You have to perform the following steps to install `Unipot':
+
+  -- Get the sources.
+  -- Unpack the sources with the `unzoo' utility.
+  -- Optionally edit the `ALLPKG' file so that the `Unipot'
+     documentation will be available when GAP starts up.
+
+               What you need to install `Unipot'
+               ---------------------------------
+
+Version 1.2  of  the  package  was  altered  to  support the new
+package  loading mechanism of GAP 4.4 and thus requires at least
+Version 4.4 of GAP.
+
+
+              Getting and unpacking the sources
+              ---------------------------------
+
+You can download the sources from the same places as GAP:
+
+   http://www.gap-system.org/Packages/packages.html
+
+If  you  installed  a recent version of the packages-... file of
+the  GAP  distribution,  then  unipot  is  most  likely  already
+installed.  If  not,  you  can  download  the  package  `Unipot'
+separately.  In  that  case  go to the subdirectory `pkg' of the
+main GAP directory (when you installed the  GAP distribution,  a
+new  directory  called `gap4r<X>' for some <X> was created; this
+directory   contains   the  `pkg'  subdirectory).  The  standard
+location would be
+
+   /usr/local/lib/gap4rX/pkg
+
+Then  extract  the  sources  of  the  `Unipot' package. `Unipot'
+resides  completely  in  the  following  subdirectory  (assuming
+standard location):
+
+   /usr/local/lib/gap4rX/pkg/unipot
+
+
+     Installing in a different than the standard location
+     ----------------------------------------------------
+
+It could happen  that you do not want to install `Unipot' in its
+standard  location, perhaps  because you  do not  want to bother
+your  system  administrator  and  have  no  access  to  the  GAP
+directory.  In this  case  just  unpack  `Unipot'  in  any other
+location within a  `pkg' directory as described above. E.g.  the
+directory containing  the `pkg' directory is `/home/user/mygap',
+then `Unipot' resides in `/home/user/mygap/pkg/unipot'.
+
+Note that you *either* have to edit the startup script `gap.sh':
+   Add  `/home/user/mygap'  separating it with a semicolon (`;')
+   from previous directories for the variable `GAP_DIR'
+*or* you have to start GAP with following command line option:
+
+   # gap4 -l "/usr/local/lib/gap4rX;/home/user/mygap"
+
+                   Loading `Unipot' in GAP
+                   -----------------------
+
+The  documentation  of  the  package  is  available  in any GAP4
+session,  even  if  the  package  is  not loaded. Like any other
+package, `Unipot' is loaded in GAP with
+
+gap> LoadPackage("unipot");
+
+within  the  GAP4  session. If you want the package to be loaded
+automatically   everytime   you   start   GAP,   edit  the  file
+PackageInfo.g  in  the  unipot  directory  and  change the value
+of the variable Autoload to `true' at the end of the file.
+
+
+
+If you have problems with this package, wish to make comments or
+suggestions, or if you find bugs, please send an e-mail to me:
+
+  Sergei Haller <Sergei.Haller@math.uni-giessen.de>
+
+Also, I would  like to hear about applications of this  package.
+(See "Citing Unipot", section 3 of the manual preface.)
+
