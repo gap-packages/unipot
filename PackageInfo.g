@@ -58,17 +58,6 @@ SetPackageInfo(
     ),
     AvailabilityTest := ReturnTrue,
     AbstractHTML     := "Tools for computing with elements of unipotent subgroups of Chevalley groups.",
-    BannerString     := Concatenation( " /======================================================\\\n",
-                                       " !                                                      !\n",
-                                       " !                GAP Package UNIPOT ", ~.Version, "                !\n",
-                                       " !       (Computations with elements of unipotent       !\n",
-                                       " !             subgroups of Chevalley Groups)           !\n",
-                                       " !                                                      !\n",
-                                       " ! by ", ~.Persons[1].FirstNames, " ", ~.Persons[1].LastName, " <", ~.Persons[1].Email, "> !\n",
-                                       " !                                                      !\n",
-                                       " !                    see ??unipot                      !\n",
-                                       " \\======================================================/\n" ),
-
     Keywords         := [ "Chevalley", "unipotent elements", "unipot" ],
     TestFile         := "tst/littletest.tst",
 
