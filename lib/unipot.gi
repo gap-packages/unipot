@@ -705,16 +705,12 @@ InstallOtherMethod(  UnipotChevElem,
                felems := Compacted( felems );
           until roots = roots1;
      
-          # Make the record immutable
-          # Vielleicht ist es die "bessere" Vorgehensweise, damit sich
-          # nicht unbemerkt Fehler einschleichen ...
-          
           obj := Objectify( NewType( Fam,
                                      IsUnipotChevElem and 
                                      rep and 
                                      IsCopyable),
-                            Immutable( rec(  roots := roots, 
-                                            felems := felems) )
+                            rec(  roots := roots, 
+                                            felems := felems )
                    );
           
      
