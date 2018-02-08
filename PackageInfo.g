@@ -29,9 +29,9 @@ SetPackageInfo(
         IsMaintainer  := true,
         Email         := "Sergei.Haller@math.uni-giessen.de",
         WWWHome       := "http://www.sergei-haller.de",
-        Place         := "Gieﬂen",
-        Institution   := "Justus-Liebig-Universit‰t Gieﬂen",
-        PostalAddress := "Justus-Liebig-Universit‰t Gieﬂen\nMathematisches Institut\nArndtstraﬂe 2\nD-35392 Gieﬂen\nGermany",
+        Place         := "Gie√üen",
+        Institution   := "Justus-Liebig-Universit√§t Gie√üen",
+        PostalAddress := "Justus-Liebig-Universit√§t Gie√üen\nMathematisches Institut\nArndtstra√üe 2\nD-35392 Gie√üen\nGermany",
       )
     ],
     PackageDoc := rec(
