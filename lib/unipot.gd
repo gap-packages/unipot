@@ -2,8 +2,6 @@
 ##
 #W  unipot.gd                   UNIPOT package                     Sergei Haller
 ##
-#H  @(#)$Id: unipot.gd,v 2.7 2004/11/16 16:41:31 gc1007 Exp $
-##
 #Y  Copyright (C) 2000-2004, Sergei Haller
 #Y  Arbeitsgruppe Algebra, Justus-Liebig-Universitaet Giessen
 ##
