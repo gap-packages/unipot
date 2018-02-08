@@ -2,8 +2,6 @@
 ##  
 #W  PackageInfo.g            for the package `Unipot'              Sergei Haller
 ##  
-#H  @(#)$Id: PackageInfo.g,v 2.8 2004/11/16 16:44:10 gc1007 Exp $
-## 
 #Y  Copyright (C) 2000-2004, Sergei Haller
 #Y  Arbeitsgruppe Algebra, Justus-Liebig-Universitaet Giessen
 ##

@@ -2,10 +2,8 @@
 ##
 #W  littletest.tst           test for package 'Unipot'             Sergei Haller
 ##
-#H  @(#)$Id: littletest.tst,v 1.6 2004/11/16 16:41:32 gc1007 Exp $
-##
 
-gap> START_TEST("Just a little test for package unipot\n$Id: littletest.tst,v 1.6 2004/11/16 16:41:32 gc1007 Exp $");
+gap> START_TEST("littletest.tst");
 gap> ss := SizeScreen();;
 gap> SizeScreen( [80,ss[2]] );;
 gap> LoadPackage("unipot", "1.2", false);
