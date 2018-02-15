@@ -526,9 +526,7 @@ InstallMethod( CentralElement,
 
 InstallMethod( IsCentral,
      "for a UnipotChevSubGr and a UnipotChevElem",
-     function(u,z)
-          return IsIdenticalObj(ElementsFamily(u),z);
-     end,
+     IsCollsElms,
      [ IsUnipotChevSubGr, IsUnipotChevElem ],
      function( U, z )
           local posrootsFC, ring, r;
@@ -1742,13 +1740,7 @@ InstallMethod( Comm,
 
 InstallOtherMethod( Comm,
      "for two UnipotChevElem and a string",
-
-#N   The following didn't work prior to GAP4.3 (ApplicableMethod reported
-#N   `bad family relations'), so I used ReturnTrue here.
-     function(a,b,c)
-          return IsIdenticalObj(a,b);
-     end,
-
+     IsFamFamX,
      [ IsUnipotChevElem,
        IsUnipotChevElem,
        IsString ],
@@ -1771,14 +1763,7 @@ InstallOtherMethod( Comm,
 
 InstallOtherMethod( Comm,
      "for two root elements UnipotChevElem and a string",
-
-#N   The following didn't work prior to GAP4.3 (ApplicableMethod reported
-#N   `bad family relations'), so I used ReturnTrue here and checked for families
-#N   later inside the function body.
-     function(a,b,c)
-          return IsIdenticalObj(a,b);
-     end,
-
+     IsFamFamX,
      [ IsUnipotChevElem and IsRootElement,
        IsUnipotChevElem and IsRootElement,
        IsString ],
@@ -1788,9 +1773,6 @@ InstallOtherMethod( Comm,
           if canon <> "canonical" then
                Error("3rd argument (if present) must be \"canonical\"");
           fi;
-#N        if not IsIdenticalObj(FamilyObj(x), FamilyObj(y)) then
-#N             Error("1st and 2nd arguments must have identical Families");
-#N        fi;
 
           if IsUnipotChevRepByRootNumbers(x) then
                rep := IsUnipotChevRepByRootNumbers;
@@ -1830,14 +1812,7 @@ InstallOtherMethod( Comm,
 
 InstallOtherMethod( Comm,
      "for two records, a string and a UnipotChevFamily",
-
-#N   The following didn't work prior to GAP4.3 (ApplicableMethod reported
-#N   `bad family relations'), so I used ReturnTrue here and checked for families
-#N   later inside the function body.
-     function(a,b,c,d)
-          return IsIdenticalObj(a,b);
-     end,
-
+     IsFamFamXY,
      [ IsRecord,
        IsRecord,
        IsString,
