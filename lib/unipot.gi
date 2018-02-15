@@ -190,8 +190,7 @@ end
 
 InstallMethod( PrintObj,
      "for a UnipotChevFamily",
-     ReturnTrue,
-     [ IsUnipotChevFamily ], 0,
+     [ IsUnipotChevFamily ],
      function( Fam )
           Print( "UnipotChevFamily( \"",
                  Fam!.type, "\", ",
@@ -216,7 +215,6 @@ InstallMethod( \=,
      IsIdenticalObj,
      [ IsUnipotChevFamily,
        IsUnipotChevFamily ],
-     0,
      function( Fam1, Fam2 )
           return IsIdenticalObj( Fam1, Fam2 )
                  or (     ( Fam1!.type = Fam2!.type )
@@ -235,8 +233,7 @@ InstallMethod( \=,
 
 InstallOtherMethod( OneOp,
      "for a UnipotChevFamily",
-     ReturnTrue,
-     [ IsUnipotChevFamily ], 0,
+     [ IsUnipotChevFamily ],
      Fam -> UnipotChevElem( Fam, rec(roots:=[], felems:=[]),
                             UNIPOT_DEFAULT_REP )
 );
@@ -310,8 +307,7 @@ end
 
 InstallMethod( PrintObj,
      "for a UnipotChevSubGr",
-     ReturnTrue,
-     [ IsUnipotChevSubGr ], 0,
+     [ IsUnipotChevSubGr ],
      function( U )
           local Fam;
           Fam := ElementsFamily( FamilyObj( U ) );
@@ -333,7 +329,6 @@ InstallMethod( PrintObj,
 
 InstallMethod( ViewObj,
      "for a UnipotChevSubGr",
-     ReturnTrue,
      [ IsUnipotChevSubGr ], 1,
      function( U )
           local  type,
@@ -359,7 +354,6 @@ InstallMethod( \=,
      IsIdenticalObj,
      [ IsUnipotChevSubGr,
        IsUnipotChevSubGr ],
-     0,
      function( U1, U2 )
           local Fam1, Fam2;
 
@@ -379,9 +373,7 @@ InstallMethod( \=,
 
 InstallOtherMethod( One,
      "for a UnipotChevSubGr",
-     ReturnTrue,
      [ IsUnipotChevSubGr ],
-     0,
      U -> OneOp( U )
 );
 
@@ -394,8 +386,7 @@ InstallOtherMethod( One,
 
 InstallOtherMethod( OneOp,
      "for a UnipotChevSubGr",
-     ReturnTrue,
-     [ IsUnipotChevSubGr ], 0,
+     [ IsUnipotChevSubGr ],
      U -> One(ElementsFamily( FamilyObj( U ) ))
 );
 
@@ -410,8 +401,7 @@ InstallOtherMethod( OneOp,
 
 InstallMethod( Size,
      "for a finite UnipotChevSubGr",
-     ReturnTrue,
-     [ IsUnipotChevSubGr and IsFinite ], 0,
+     [ IsUnipotChevSubGr and IsFinite ],
      function( U )
           local Fam, R;
 
@@ -435,8 +425,7 @@ InstallMethod( Size,
 
 InstallOtherMethod( GeneratorsOfGroup,
      "for a finite UnipotChevSubGr",
-     ReturnTrue,
-     [ IsUnipotChevSubGr and IsFinite ], 0,
+     [ IsUnipotChevSubGr and IsFinite ],
      function( U )
           local Fam;
 
@@ -467,9 +456,7 @@ DeclareAttribute( "CentralElement", IsUnipotChevSubGr );
 
 InstallMethod( CentralElement,
      "for a UnipotChevSubGr",
-     ReturnTrue,
      [ IsUnipotChevSubGr ],
-     0,
      function( U )
           local z,                 # the central element to be returned...
                 t, tnr,            # the indeterminates for z ...
@@ -543,7 +530,6 @@ InstallMethod( IsCentral,
           return IsIdenticalObj(ElementsFamily(u),z);
      end,
      [ IsUnipotChevSubGr, IsUnipotChevElem ],
-     0,
      function( U, z )
           local posrootsFC, ring, r;
           
@@ -579,8 +565,7 @@ InstallMethod( IsCentral,
 
 InstallMethod( Representative,
      "for a UnipotChevElem",
-     ReturnTrue,
-     [ IsUnipotChevSubGr ], 0,
+     [ IsUnipotChevSubGr ],
      function( U )
           local posroots, r, indets;
           posroots := PositiveRoots(RootSystem(U));
@@ -602,10 +587,6 @@ InstallMethod( Representative,
 
 
 
-
-
-
-
 ################################################################################
 ##
 #M  UnipotChevElem( <Fam>, <record>, <rep> )
@@ -621,11 +602,9 @@ InstallMethod( Representative,
 
 InstallOtherMethod(  UnipotChevElem,
      "for UnipotChevFamily, a record and a string.",
-     ReturnTrue,
      [IsUnipotChevFamily,
       IsRecord,
       IS_OPERATION],
-     0,
      function( Fam, record, rep )
           local i,          # loop variable
                 roots,      
@@ -747,11 +726,9 @@ InstallOtherMethod(  UnipotChevElem,
 
 InstallMethod(  UnipotChevElem,
      "for UnipotChevSubGr, a record and a string",
-     ReturnTrue,
      [IsUnipotChevSubGr,
       IsRecord,
       IS_OPERATION],
-     0,
      function( U, record, rep )
           return UnipotChevElem( ElementsFamily(FamilyObj(U)), record, rep );
      end
@@ -772,11 +749,9 @@ InstallMethod(  UnipotChevElem,
 
 InstallMethod(  UnipotChevElemByRootNumbers,
      "for UnipotChevSubGr and a list of positions of roots",
-     ReturnTrue,
      [IsUnipotChevSubGr,
       IsList,
       IsList],
-     0,
      function( U, roots, felems )
           return UnipotChevElem( U, rec( roots:=roots, felems:=felems ),
                                  IsUnipotChevRepByRootNumbers );
@@ -796,11 +771,9 @@ InstallMethod(  UnipotChevElemByRootNumbers,
 
 InstallMethod(  UnipotChevElemByRoots,
      "for UnipotChevSubGr and a list of roots",
-     ReturnTrue,
      [IsUnipotChevSubGr,
       IsList,
       IsList],
-     0,
      function( U, roots, felems )
           local list_of_positions,
                 i,
@@ -863,11 +836,9 @@ InstallMethod(  UnipotChevElemByRoots,
 
 InstallMethod(  UnipotChevElemByFundamentalCoeffs,
      "for UnipotChevSubGr and a list of coordinates of roots",
-     ReturnTrue,
      [IsUnipotChevSubGr,
       IsList,
       IsList],
-     0,
      function( U, roots, felems )
           local list_of_positions,
                 i,
@@ -932,11 +903,9 @@ InstallMethod(  UnipotChevElemByFundamentalCoeffs,
 
 InstallOtherMethod(  UnipotChevElemByRootNumbers,
      "for UnipotChevSubGr, a position of a root and a ring rlement",
-     ReturnTrue,
      [IsUnipotChevSubGr,
       IsPosInt,
       IsObject], # the third argument must be an element of Fam!.ring
-     0,
      function( U, root, felem )
           return UnipotChevElemByRootNumbers( U, [root], [felem] );
      end
@@ -944,11 +913,9 @@ InstallOtherMethod(  UnipotChevElemByRootNumbers,
 
 InstallOtherMethod(  UnipotChevElemByRoots,
      "for UnipotChevSubGr, a root and a ring rlement",
-     ReturnTrue,
      [IsUnipotChevSubGr,
       IsList,
       IsObject], # the third argument must be an element of Fam!.ring
-     0,
      function( U, root, felem )
           return UnipotChevElemByRoots( U, [root], [felem] );
      end
@@ -956,11 +923,9 @@ InstallOtherMethod(  UnipotChevElemByRoots,
 
 InstallOtherMethod(  UnipotChevElemByFundamentalCoeffs,
      "for UnipotChevSubGr, a lin. comb. of fund. roots and a ring element",
-     ReturnTrue,
      [IsUnipotChevSubGr,
       IsList,
       IsObject], # the third argument must be an element of Fam!.ring
-     0,
      function( U, root, felem )
           return UnipotChevElemByFundamentalCoeffs( U, [root], [felem] );
      end
@@ -979,10 +944,8 @@ InstallOtherMethod(  UnipotChevElemByFundamentalCoeffs,
 
 InstallOtherMethod(  UnipotChevElemByRootNumbers,
      "for UnipotChevSubGr and a list. ***DEPRECATED***",
-     ReturnTrue,
      [IsUnipotChevSubGr,
       IsList], 
-     0,
      function( U, list )
           local roots, felems, i;
           
@@ -1002,10 +965,8 @@ InstallOtherMethod(  UnipotChevElemByRootNumbers,
 
 InstallOtherMethod(  UnipotChevElemByRoots,
      "for UnipotChevSubGr and a list. ***DEPRECATED***",
-     ReturnTrue,
      [IsUnipotChevSubGr,
       IsList], 
-     0,
      function( U, list )
           local roots, felems, i, Fam;
           
@@ -1025,10 +986,8 @@ InstallOtherMethod(  UnipotChevElemByRoots,
 
 InstallOtherMethod(  UnipotChevElemByFundamentalCoeffs,
      "for UnipotChevSubGr and a list. ***DEPRECATED***",
-     ReturnTrue,
      [IsUnipotChevSubGr,
       IsList], 
-     0,
      function( U, list )
           local roots, felems, i, Fam;
           
@@ -1063,9 +1022,7 @@ InstallOtherMethod(  UnipotChevElemByFundamentalCoeffs,
 DeclareGlobalFunction( "ChangeUnipotChevRep" );
 InstallOtherMethod(  UnipotChevElemByRootNumbers,
      "for UnipotChevElem",
-     ReturnTrue,
      [IsUnipotChevElem],
-     0,
      function( x )
           if IsUnipotChevRepByRootNumbers(x) then 
                return x;
@@ -1078,9 +1035,7 @@ InstallOtherMethod(  UnipotChevElemByRootNumbers,
 
 InstallOtherMethod(  UnipotChevElemByFundamentalCoeffs,
      "for UnipotChevElem",
-     ReturnTrue,
      [IsUnipotChevElem],
-     0,
      function( x )
           if IsUnipotChevRepByFundamentalCoeffs(x) then 
                return x;
@@ -1093,9 +1048,7 @@ InstallOtherMethod(  UnipotChevElemByFundamentalCoeffs,
 
 InstallOtherMethod(  UnipotChevElemByRoots,
      "for UnipotChevElem",
-     ReturnTrue,
      [IsUnipotChevElem],
-     0,
      function( x )
           if IsUnipotChevRepByRoots(x) then 
                return x;
@@ -1190,7 +1143,6 @@ InstallGlobalFunction(  ChangeUnipotChevRep,
 
 InstallMethod( PrintObj,
      "for a UnipotChevElem",
-     ReturnTrue,
      [ IsUnipotChevElem ], 1,
      function( x )
      local Fam;
@@ -1241,8 +1193,7 @@ InstallMethod( PrintObj,
 
 InstallMethod( ViewObj,
      "for a UnipotChevElem",
-     ReturnTrue,
-     [ IsUnipotChevElem ], 0,
+     [ IsUnipotChevElem ],
      function( x )
           local r, R;
 
@@ -1281,8 +1232,7 @@ InstallMethod( ViewObj,
 
 InstallMethod( ShallowCopy,
      "for a UnipotChevElem",
-     ReturnTrue,
-     [ IsUnipotChevElem ], 0,
+     [ IsUnipotChevElem ],
      function( x )
           local rep, copy;
           
@@ -1329,7 +1279,6 @@ InstallMethod( \=,
      IsIdenticalObj,
      [ IsUnipotChevElem,
        IsUnipotChevElem ],
-     0,
      function( x, y )
           if IsIdenticalObj( x,y ) or 
              ( x!.roots = y!.roots and x!.felems = y!.felems ) then
@@ -1380,7 +1329,6 @@ InstallMethod( \<,
      IsIdenticalObj,
      [ IsUnipotChevElem,
        IsUnipotChevElem ],
-     0,
      function( x, y )
           local Fam, R, r, pos, tx, ty, o;
           
@@ -1441,7 +1389,6 @@ InstallMethod( \*,
      IsIdenticalObj,
      [ IsUnipotChevElem,
        IsUnipotChevElem ],
-     0,
      function( x, y )
           local rep;
           
@@ -1471,10 +1418,8 @@ InstallMethod( \*,
 
 InstallMethod( \^,
      "for a root element UnipotChevElem and an integer",
-     ReturnTrue,
      [ IsUnipotChevElem and IsRootElement,
        IsInt ],
-     0,
      function( x, i )
           local rep;
           
@@ -1497,10 +1442,8 @@ InstallMethod( \^,
 
 InstallMethod( \^,
      "for a identity UnipotChevElem and an integer",
-     ReturnTrue,
      [ IsUnipotChevElem and IsOne,
        IsInt ],
-     0,
      function( x, i )
           return x;
      end
@@ -1518,8 +1461,7 @@ InstallMethod( \^,
 
 InstallMethod( OneOp,
      "for a UnipotChevElem",
-     ReturnTrue,
-     [ IsUnipotChevElem ], 0,
+     [ IsUnipotChevElem ],
      x -> One( FamilyObj( x ) )
 );
 
@@ -1533,15 +1475,13 @@ InstallMethod( OneOp,
 
 InstallMethod( IsOne,
      "for a UnipotChevElem with known canonical form",
-     ReturnTrue,
      [ IsUnipotChevElem and HasCanonicalForm ], 1,
      x -> IsOne( CanonicalForm( x ) )
 );
 
 InstallMethod( IsOne,
      "for a UnipotChevElem with known inverse",
-     ReturnTrue,
-     [ IsUnipotChevElem and HasInverse ], 0,
+     [ IsUnipotChevElem and HasInverse ],
      function( x )
           if HasIsOne( Inverse(x) ) then
                return IsOne( Inverse(x) );
@@ -1553,8 +1493,7 @@ InstallMethod( IsOne,
 
 InstallMethod( IsOne,
      "for a UnipotChevElem",
-     ReturnTrue,
-     [ IsUnipotChevElem ], 0,
+     [ IsUnipotChevElem ],
      x -> IsOne( CanonicalForm( x ) )
 );
 
@@ -1568,8 +1507,7 @@ InstallMethod( IsOne,
 
 InstallMethod( Inverse,
      "for a UnipotChevElem",
-     ReturnTrue,
-     [ IsUnipotChevElem ], 0,
+     [ IsUnipotChevElem ],
      function( x )
           local inv, rep;
           if HasCanonicalForm( x ) and HasInverse(CanonicalForm( x )) then
@@ -1646,8 +1584,7 @@ InstallMethod( Inverse,
 
 InstallMethod( InverseOp,
      "for a UnipotChevElem",
-     ReturnTrue,
-     [ IsUnipotChevElem ], 0,
+     [ IsUnipotChevElem ],
      x -> Inverse(x)
 );
 
@@ -1756,10 +1693,8 @@ InstallGlobalFunction( ChevalleyCommutatorConstant,
 
 InstallMethod( \^,
      "for two UnipotChevElem's",
-     ReturnTrue,
      [ IsUnipotChevElem,
        IsUnipotChevElem ],
-     0,
      function( x, y )
           local fun;
           
@@ -1792,7 +1727,6 @@ InstallMethod( Comm,
      IsIdenticalObj,
      [ IsUnipotChevElem,
        IsUnipotChevElem ],
-     0,
      function( x, y )
           return x^-1 * y^-1 * x * y;
      end
@@ -1818,7 +1752,6 @@ InstallOtherMethod( Comm,
      [ IsUnipotChevElem,
        IsUnipotChevElem,
        IsString ],
-     0,
      function( x, y, canon)
           if canon <> "canonical" then
                Error("3rd argument (if present) must be \"canonical\"");
@@ -1849,7 +1782,6 @@ InstallOtherMethod( Comm,
      [ IsUnipotChevElem and IsRootElement,
        IsUnipotChevElem and IsRootElement,
        IsString ],
-     0,
      function( x, y, canon )
           local rep, obj;
 
@@ -1910,7 +1842,6 @@ InstallOtherMethod( Comm,
        IsRecord,
        IsString,
        IsUnipotChevFamily ],
-     0,
      function( x, y, str, Fam )
           local comm_roots,
                 comm_felems,  # will be returned
@@ -2006,7 +1937,6 @@ InstallOtherMethod( Comm,
 InstallImmediateMethod( IsRootElement,
      "for a UnipotChevElem",
      IsUnipotChevElem,
-     0,
      x -> ( Length( x!.roots ) = 1 )
 );
 
@@ -2020,8 +1950,7 @@ InstallImmediateMethod( IsRootElement,
 
 InstallMethod( CanonicalForm,
      "for a UnipotChevElem",
-     ReturnTrue,
-     [ IsUnipotChevElem ], 0,
+     [ IsUnipotChevElem ],
      function( x )
           local i,                 # used in afor loop
                 canonical,         # the return value
