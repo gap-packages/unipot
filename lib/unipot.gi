@@ -1912,6 +1912,7 @@ InstallOtherMethod( Comm,
 InstallImmediateMethod( IsRootElement,
      "for a UnipotChevElem",
      IsUnipotChevElem,
+     0,
      x -> ( Length( x!.roots ) = 1 )
 );
 
