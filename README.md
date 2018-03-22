@@ -81,7 +81,7 @@ Also, we would like to hear about applications of this package.
 
 ## Copyright and license
 
-Copyright (C) 2000-2004, Sergei Haller <Sergei.Haller@math.uni-giessen.de>
+Copyright (C) 2000-2004, Sergei Haller
 
 This code is released under the GPL version 2 or later (at your
 preference). For the full license text, consult the `LICENSE` file or

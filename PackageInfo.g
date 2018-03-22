@@ -2,25 +2,27 @@
 ##  
 #W  PackageInfo.g            for the package `Unipot'              Sergei Haller
 ##  
-#H  @(#)$Id: PackageInfo.g,v 2.8 2004/11/16 16:44:10 gc1007 Exp $
-## 
 #Y  Copyright (C) 2000-2004, Sergei Haller
 #Y  Arbeitsgruppe Algebra, Justus-Liebig-Universitaet Giessen
-##
-#N  With a new release of the package at least the entries .Version, .Date and
-#N  .ArchiveURL must be updated.
 ##
 
 SetPackageInfo( 
   rec(
-    PackageName     := "unipot",
+    PackageName     := "Unipot",
     Subtitle        := "Computing with elements of unipotent subgroups of Chevalley groups",
-    Version         := "1.2",
-    Date            := "16/11/2004",
-    PackageWWWHome  := "http://www.uni-giessen.de/~gc1007/unipot/",
-    ArchiveURL      := Concatenation( ~.PackageWWWHome, "unipot-1.2"    ),
-    README_URL      := Concatenation( ~.PackageWWWHome, "README"        ),
+    Version         := "1.3",
+    Date            := "22/03/2018",
+    PackageWWWHome  := "https://gap-packages.github.io/unipot/",
+    README_URL      := Concatenation( ~.PackageWWWHome, "README.md" ),
     PackageInfoURL  := Concatenation( ~.PackageWWWHome, "PackageInfo.g" ),
+    SourceRepository := rec(
+        Type := "git",
+        URL := "https://github.com/gap-packages/unipot",
+    ),
+    IssueTrackerURL := Concatenation( ~.SourceRepository.URL, "/issues" ),
+    ArchiveURL      := Concatenation( ~.SourceRepository.URL,
+                                     "/releases/download/v", ~.Version,
+                                     "/unipot-", ~.Version ),
     ArchiveFormats  := ".tar.bz2",
     Status          := "deposited",
     Persons := [
@@ -28,13 +30,26 @@ SetPackageInfo(
         LastName      := "Haller",
         FirstNames    := "Sergei",
         IsAuthor      := true,
-        IsMaintainer  := true,
-        Email         := "Sergei.Haller@math.uni-giessen.de",
+        IsMaintainer  := false,
+        Email         := "sergei@sergei-haller.de",
         WWWHome       := "http://www.sergei-haller.de",
-        Place         := "Gießen",
-        Institution   := "Justus-Liebig-Universität Gießen",
-        PostalAddress := "Justus-Liebig-Universität Gießen\nMathematisches Institut\nArndtstraße 2\nD-35392 Gießen\nGermany",
-      )
+      ),
+      rec(
+        LastName      := "Horn",
+        FirstNames    := "Max",
+        IsAuthor      := false,
+        IsMaintainer  := true,
+        Email         := "max.horn@math.uni-giessen.de",
+        WWWHome       := "http://www.quendi.de/math",
+        PostalAddress := Concatenation( "AG Algebra\n",
+                                        "Mathematisches Institut\n",
+                                        "Justus-Liebig-UniversitÃ¤t GieÃŸen\n",
+                                        "ArndtstraÃŸe 2\n",
+                                        "35392 GieÃŸen\n",
+                                        "Germany" ),
+        Place         := "GieÃŸen, Germany",
+        Institution   := "Justus-Liebig-UniversitÃ¤t GieÃŸen"
+      ),
     ],
     PackageDoc := rec(
       BookName         := "unipot",
@@ -46,30 +61,15 @@ SetPackageInfo(
       Autoload         := true
     ),
     Dependencies := rec(
-      GAP                    := ">=4.4",
+      GAP                    := ">=4.7",
       NeededOtherPackages    := [],
       SuggestedOtherPackages := [],
       ExternalConditions     := []
     ),
     AvailabilityTest := ReturnTrue,
     AbstractHTML     := "Tools for computing with elements of unipotent subgroups of Chevalley groups.",
-    BannerString     := Concatenation( " /======================================================\\\n",
-                                       " !                                                      !\n",
-                                       " !                GAP Package UNIPOT ", ~.Version, "                !\n",
-                                       " !       (Computations with elements of unipotent       !\n",
-                                       " !             subgroups of Chevalley Groups)           !\n",
-                                       " !                                                      !\n",
-                                       " ! by ", ~.Persons[1].FirstNames, " ", ~.Persons[1].LastName, " <", ~.Persons[1].Email, "> !\n",
-                                       " !                                                      !\n",
-                                       " !                    see ??unipot                      !\n",
-                                       " \\======================================================/\n" ),
-
     Keywords         := [ "Chevalley", "unipotent elements", "unipot" ],
-    TestFile         := "tst/littletest.tst",
-
-    # Change the following to `true' if you wish the package
-    # to be loaded automatically on every start of GAP
-    Autoload := false,
+    TestFile         := "tst/testall.g",
   )
 );
 
