@@ -1,6 +1,6 @@
 ################################################################################
 ##
-#W  read.g                      UNIPOT package                     Sergei Haller
+#W  read.g                      Unipot package                     Sergei Haller
 ##
 #Y  Copyright (C) 2000-2004, Sergei Haller
 #Y  Arbeitsgruppe Algebra, Justus-Liebig-Universitaet Giessen

@@ -1,4 +1,4 @@
-                        Installing UNIPOT
+                        Installing Unipot
                         -----------------
 
 This document describes the procedure of installing the package.
@@ -35,7 +35,7 @@ You can download the sources from the same places as GAP:
    https://www.gap-system.org/Packages/packages.html
 
 If  you  installed  a recent version of the packages-... file of
-the  GAP  distribution,  then  unipot  is  most  likely  already
+the  GAP  distribution,  then `Unipot' is  most  likely  already
 installed.  If  not,  you  can  download  the  package  `Unipot'
 separately.  In  that  case  go to the subdirectory `pkg' of the
 main GAP directory (when you installed the  GAP distribution,  a

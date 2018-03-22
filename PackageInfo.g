@@ -11,7 +11,7 @@
 
 SetPackageInfo( 
   rec(
-    PackageName     := "unipot",
+    PackageName     := "Unipot",
     Subtitle        := "Computing with elements of unipotent subgroups of Chevalley groups",
     Version         := "1.2dev",
     Date            := "16/11/2004",
