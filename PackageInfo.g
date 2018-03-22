@@ -13,8 +13,8 @@ SetPackageInfo(
   rec(
     PackageName     := "Unipot",
     Subtitle        := "Computing with elements of unipotent subgroups of Chevalley groups",
-    Version         := "1.2dev",
-    Date            := "16/11/2004",
+    Version         := "1.3dev",
+    Date            := "22/03/2018",
     PackageWWWHome  := "https://gap-packages.github.io/unipot/",
     README_URL      := Concatenation( ~.PackageWWWHome, "README"        ),
     PackageInfoURL  := Concatenation( ~.PackageWWWHome, "PackageInfo.g" ),
@@ -33,13 +33,29 @@ SetPackageInfo(
         LastName      := "Haller",
         FirstNames    := "Sergei",
         IsAuthor      := true,
-        IsMaintainer  := true,
+        IsMaintainer  := false,
         Email         := "Sergei.Haller@math.uni-giessen.de",
         WWWHome       := "http://www.sergei-haller.de",
         Place         := "Gießen",
         Institution   := "Justus-Liebig-Universität Gießen",
         PostalAddress := "Justus-Liebig-Universität Gießen\nMathematisches Institut\nArndtstraße 2\nD-35392 Gießen\nGermany",
-      )
+      ),
+      rec(
+        LastName      := "Horn",
+        FirstNames    := "Max",
+        IsAuthor      := false,
+        IsMaintainer  := true,
+        Email         := "max.horn@math.uni-giessen.de",
+        WWWHome       := "http://www.quendi.de/math",
+        PostalAddress := Concatenation( "AG Algebra\n",
+                                        "Mathematisches Institut\n",
+                                        "Justus-Liebig-Universität Gießen\n",
+                                        "Arndtstraße 2\n",
+                                        "35392 Gießen\n",
+                                        "Germany" ),
+        Place         := "Gießen, Germany",
+        Institution   := "Justus-Liebig-Universität Gießen"
+      ),
     ],
     PackageDoc := rec(
       BookName         := "unipot",
@@ -51,7 +67,7 @@ SetPackageInfo(
       Autoload         := true
     ),
     Dependencies := rec(
-      GAP                    := ">=4.4",
+      GAP                    := ">=4.7",
       NeededOtherPackages    := [],
       SuggestedOtherPackages := [],
       ExternalConditions     := []
@@ -59,11 +75,7 @@ SetPackageInfo(
     AvailabilityTest := ReturnTrue,
     AbstractHTML     := "Tools for computing with elements of unipotent subgroups of Chevalley groups.",
     Keywords         := [ "Chevalley", "unipotent elements", "unipot" ],
-    TestFile         := "tst/littletest.tst",
-
-    # Change the following to `true' if you wish the package
-    # to be loaded automatically on every start of GAP
-    Autoload := false,
+    TestFile         := "tst/testall.g",
   )
 );
 
