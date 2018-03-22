@@ -16,7 +16,7 @@ SetPackageInfo(
     Version         := "1.3dev",
     Date            := "22/03/2018",
     PackageWWWHome  := "https://gap-packages.github.io/unipot/",
-    README_URL      := Concatenation( ~.PackageWWWHome, "README"        ),
+    README_URL      := Concatenation( ~.PackageWWWHome, "README.md" ),
     PackageInfoURL  := Concatenation( ~.PackageWWWHome, "PackageInfo.g" ),
     SourceRepository := rec(
         Type := "git",
