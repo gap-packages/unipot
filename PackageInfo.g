@@ -34,11 +34,8 @@ SetPackageInfo(
         FirstNames    := "Sergei",
         IsAuthor      := true,
         IsMaintainer  := false,
-        Email         := "Sergei.Haller@math.uni-giessen.de",
+        Email         := "sergei@sergei-haller.de",
         WWWHome       := "http://www.sergei-haller.de",
-        Place         := "Gießen",
-        Institution   := "Justus-Liebig-Universität Gießen",
-        PostalAddress := "Justus-Liebig-Universität Gießen\nMathematisches Institut\nArndtstraße 2\nD-35392 Gießen\nGermany",
       ),
       rec(
         LastName      := "Horn",
