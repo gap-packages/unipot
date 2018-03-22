@@ -15,7 +15,7 @@ maintainers:
 GAP: ">=4.4"
 
 www: http://www.uni-giessen.de/~gc1007/unipot/
-readme: README
+readme: README.md
 packageinfo: http://www.uni-giessen.de/~gc1007/unipot/PackageInfo.g
 
 downloads:
