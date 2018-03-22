@@ -5,15 +5,12 @@
 #Y  Copyright (C) 2000-2004, Sergei Haller
 #Y  Arbeitsgruppe Algebra, Justus-Liebig-Universitaet Giessen
 ##
-#N  With a new release of the package at least the entries .Version, .Date and
-#N  .ArchiveURL must be updated.
-##
 
 SetPackageInfo( 
   rec(
     PackageName     := "Unipot",
     Subtitle        := "Computing with elements of unipotent subgroups of Chevalley groups",
-    Version         := "1.3dev",
+    Version         := "1.3",
     Date            := "22/03/2018",
     PackageWWWHome  := "https://gap-packages.github.io/unipot/",
     README_URL      := Concatenation( ~.PackageWWWHome, "README.md" ),
