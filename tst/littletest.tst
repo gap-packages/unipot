@@ -5,19 +5,25 @@
 gap> START_TEST("littletest.tst");
 gap> F4 := UnipotChevSubGr("F", 4, Rationals); # Creating the group of type F_4 ...
 <Unipotent subgroup of a Chevalley group of type F4 over Rationals>
-gap> a  := Indeterminate(Rationals, "a");; # a
-gap> A  := Indeterminate(Rationals, "A");; # \alpha
-gap> b  := Indeterminate(Rationals, "b");; # b
-gap> B  := Indeterminate(Rationals, "B");; # \beta
-gap> B1 := Indeterminate(Rationals, "B1");; # \beta^-1
-gap> u  := Indeterminate(Rationals, "u");; # u
-gap> uu := Indeterminate(Rationals, "uu");; # \bar{u}
-gap> v  := Indeterminate(Rationals, "v");; # v
-gap> vv := Indeterminate(Rationals, "vv");; # \bar{v}
-gap> x  := Indeterminate(Rationals, "x");; # x
-gap> xx := Indeterminate(Rationals, "xx");; # \bar{x}
-gap> y  := Indeterminate(Rationals, "y");; # y
-gap> yy := Indeterminate(Rationals, "yy");; # \bar{y}
+gap> myX:=function(name, num)
+>   local ind;
+>   ind := Indeterminate(Rationals, num);
+>   SetName(ind, name);
+>   ASS_GVAR(name, ind);
+> end;;
+gap> myX("a",  2000); # a
+gap> myX("A",  2001); # \alpha
+gap> myX("b",  2002); # b
+gap> myX("B",  2003); # \beta
+gap> myX("B1", 2004); # \beta^-1
+gap> myX("u",  2005); # u
+gap> myX("uu", 2006); # \bar{u}
+gap> myX("v",  2007); # v
+gap> myX("vv", 2008); # \bar{v}
+gap> myX("x",  2009); # x
+gap> myX("xx", 2010); # \bar{x}
+gap> myX("y",  2011); # y
+gap> myX("yy", 2012); # \bar{y}
 
 #
 gap> M := [
