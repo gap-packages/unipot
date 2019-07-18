@@ -10,7 +10,7 @@ SetPackageInfo(
   rec(
     PackageName     := "Unipot",
     Subtitle        := "Computing with elements of unipotent subgroups of Chevalley groups",
-    Version         := "1.4",
+    Version         := "1.4dev",
     Date            := "09/04/2018", # dd/mm/yyyy format
     License         := "GPL-2.0-or-later",
     PackageWWWHome  := "https://gap-packages.github.io/unipot/",
