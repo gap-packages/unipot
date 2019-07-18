@@ -435,7 +435,7 @@ InstallOtherMethod( GeneratorsOfGroup,
           ListX( [1 .. Length(PositiveRoots(RootSystem(U)))], 
                  Difference( AsSet( Fam!.ring ), [Zero( Fam!.ring )] ),
                  function( r, x ) 
-                      return UnipotChevElem( U, rec(roots:=r, felems:=x), UNIPOT_DEFAULT_REP );
+                      return UnipotChevElem( U, rec(roots:=[r], felems:=[x]), UNIPOT_DEFAULT_REP );
                  end
                );
      end

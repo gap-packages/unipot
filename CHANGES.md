@@ -1,5 +1,9 @@
 This file describes changes in the GAP package 'unipot'.
 
+* X.Y (YYYY-MM-DD)
+
+  - Fix error in GeneratorsOfGroup for unipotent groups
+
 * 1.4 (2018-04-09)
 
   - Fix tests to keep working after LoadAllPackages() was called
