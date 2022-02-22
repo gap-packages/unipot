@@ -10,8 +10,9 @@ SetPackageInfo(
   rec(
     PackageName     := "Unipot",
     Subtitle        := "Computing with elements of unipotent subgroups of Chevalley groups",
-    Version         := "1.4",
-    Date            := "09/04/2018",
+    Version         := "1.5",
+    Date            := "22/02/2022", # dd/mm/yyyy format
+    License         := "GPL-2.0-or-later",
     PackageWWWHome  := "https://gap-packages.github.io/unipot/",
     README_URL      := Concatenation( ~.PackageWWWHome, "README.md" ),
     PackageInfoURL  := Concatenation( ~.PackageWWWHome, "PackageInfo.g" ),
@@ -23,7 +24,7 @@ SetPackageInfo(
     ArchiveURL      := Concatenation( ~.SourceRepository.URL,
                                      "/releases/download/v", ~.Version,
                                      "/unipot-", ~.Version ),
-    ArchiveFormats  := ".tar.bz2",
+    ArchiveFormats  := ".tar.gz",
     Status          := "deposited",
     Persons := [
       rec(
@@ -39,16 +40,16 @@ SetPackageInfo(
         FirstNames    := "Max",
         IsAuthor      := false,
         IsMaintainer  := true,
-        Email         := "max.horn@math.uni-giessen.de",
-        WWWHome       := "http://www.quendi.de/math",
-        PostalAddress := Concatenation( "AG Algebra\n",
-                                        "Mathematisches Institut\n",
-                                        "Justus-Liebig-Universität Gießen\n",
-                                        "Arndtstraße 2\n",
-                                        "35392 Gießen\n",
-                                        "Germany" ),
-        Place         := "Gießen, Germany",
-        Institution   := "Justus-Liebig-Universität Gießen"
+        Email         := "horn@mathematik.uni-kl.de",
+        WWWHome       := "https://www.quendi.de/math",
+        PostalAddress := Concatenation(
+                           "Fachbereich Mathematik\n",
+                           "TU Kaiserslautern\n",
+                           "Gottlieb-Daimler-Straße 48\n",
+                           "67663 Kaiserslautern\n",
+                           "Germany" ),
+        Place         := "Kaiserslautern, Germany",
+        Institution   := "TU Kaiserslautern"
       ),
     ],
     PackageDoc := rec(

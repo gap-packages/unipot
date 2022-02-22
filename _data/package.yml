@@ -1,6 +1,6 @@
 name: Unipot
-version: 1.4
-date: 2018-04-09
+version: 1.5
+date: 2022-02-22
 description: |
     Computing with elements of unipotent subgroups of Chevalley groups
 
@@ -10,7 +10,7 @@ authors:
 
 maintainers:
     - name: Max Horn
-      url: http://www.quendi.de/math
+      url: https://www.quendi.de/math
 
 GAP: ">=4.7"
 
@@ -19,8 +19,8 @@ readme: README.md
 packageinfo: https://gap-packages.github.io/unipot/PackageInfo.g
 
 downloads:
-    - name: .tar.bz2
-      url: https://github.com/gap-packages/unipot/releases/download/v1.4/unipot-1.4.tar.bz2
+    - name: .tar.gz
+      url: https://github.com/gap-packages/unipot/releases/download/v1.5/unipot-1.5.tar.gz
 
 abstract: |
     Tools for computing with elements of unipotent subgroups of Chevalley groups.
