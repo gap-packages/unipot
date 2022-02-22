@@ -1,6 +1,6 @@
 This file describes changes in the GAP package 'unipot'.
 
-* X.Y (YYYY-MM-DD)
+* 1.5 (2022-02-22)
 
   - Fix error in GeneratorsOfGroup for unipotent groups
 
