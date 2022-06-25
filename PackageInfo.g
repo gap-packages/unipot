@@ -33,7 +33,7 @@ SetPackageInfo(
         IsAuthor      := true,
         IsMaintainer  := false,
         Email         := "sergei@sergei-haller.de",
-        WWWHome       := "http://www.sergei-haller.de",
+        WWWHome       := "https://www.sergei-haller.de",
       ),
       rec(
         LastName      := "Horn",
