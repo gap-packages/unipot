@@ -24,41 +24,14 @@ You have to perform the following steps to install `Unipot`:
 
 You can download the sources from
  <https://gap-packages.github.io/unipot/>
-or alternatively from the same places as GAP:
- <https://www.gap-system.org/Packages/unipot.html>
 
-If you installed a recent version of the packages-... file of the GAP
+If you installed a complete copy of the standard GAP
 distribution, then `Unipot` is most likely already installed. If not,
 you can download the package `Unipot` separately. In that case go to the
 subdirectory `pkg` of the main GAP directory (when you installed the GAP
-distribution, a new directory called `gap4r<X>` for some <X> was
-created; this directory contains the `pkg` subdirectory). The standard
-location would be
-
-    /usr/local/lib/gap4rX/pkg
-
-Then extract the sources of the `Unipot` package. `Unipot` resides
-completely in the following subdirectory (assuming standard location):
-
-    /usr/local/lib/gap4rX/pkg/unipot
-
-### Installing in a different than the standard location
-
-It could happen that you do not want to install `Unipot` in its
-standard location, perhaps because you do not want to bother
-your system administrator and have no access to the GAP
-directory. In this case just unpack `Unipot` in any other
-location within a `pkg` directory as described above. E.g. the
-directory containing the `pkg` directory is `/home/user/mygap`,
-then `Unipot` resides in `/home/user/mygap/pkg/unipot`.
-
-Note that you *either* have to edit the startup script `gap.sh`:
- Add `/home/user/mygap` separating it with a semicolon (`;`)
- from previous directories for the variable `GAP_DIR`
-*or* you have to start GAP with following command line option:
-
-    gap -l "/usr/local/lib/gap4rX;/home/user/mygap"
-
+distribution, a new directory called `gap-4.<X>` for some <X> was
+created; this directory contains the `pkg` subdirectory).
+Then extract the sources of the `Unipot` package in there.
 
 ## Loading `Unipot` in GAP
 
