@@ -10,7 +10,3 @@
 ReadPackage( "unipot", "lib/rootsys.gi");
 ReadPackage( "unipot", "lib/unipot.gi");
 ReadPackage( "unipot", "lib/newstuff.gi");
-
-################################################################################
-##
-#E  read.g . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ends here

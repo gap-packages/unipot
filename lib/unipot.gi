@@ -2085,8 +2085,6 @@ InstallMethod( CanonicalForm,
 );
 
 
-
-
 ################################################################################
 ##
 #B  Bibliography
@@ -2096,6 +2094,3 @@ InstallMethod( CanonicalForm,
 #B          Wiley Classics Library Edition Published 1989.
 ##
 ################################################################################
-##
-#E  unipot.gi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . ends here
-##

@@ -18,8 +18,3 @@
 ##
 DeclareAttribute( "PositiveRootsFC", IsRootSystem );
 DeclareAttribute( "NegativeRootsFC", IsRootSystem );
-
-
-################################################################################
-##
-#E  rootsys.gd . . . . . . . . . . . . . . . . . . . . . . . . . . . . ends here
