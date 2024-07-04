@@ -109,7 +109,7 @@ brk&gt;
 <li><code>ViewObj( </code><var>U</var><code> ) M</code>
 <p>
 Special methods for unipotent  subgroups.  (see  <font face="Gill Sans,Helvetica,Arial">GAP</font> Reference Manual,
-section  <a href="https://www.gap-system.org/Manuals/doc/ref/chap6.html#X8074A8387C9DB9A8">View  and  Print</a>  for general  information  on <code>View</code>  and
+section  <a href="https://docs.gap-system.org/doc/ref/chap6.html#X8074A8387C9DB9A8">View  and  Print</a>  for general  information  on <code>View</code>  and
 <code>Print</code>)
 <p>
 <pre>
@@ -132,7 +132,7 @@ representation <code>UNIPOT_DEFAULT_REP</code> (see <a href="CHAP002.htm#SSEC003
 <p>
 <code>Size</code> returns  the order  of a unipotent subgroup.  This  is  a
 special  method for  unipotent  subgroups  using the  result  in
-Carter <a href="biblio.htm#Carter72"><cite>Carter72</cite></a>, Theorem 5.3.3 (ii).
+Carter <a href="biblio.htm#Car72"><cite>Car72</cite></a>, Theorem 5.3.3 (ii).
 <p>
 <pre>
 gap&gt; SetInfoLevel( UnipotChevInfo, 2 );
@@ -147,7 +147,7 @@ gap&gt; SetInfoLevel( UnipotChevInfo, 1 );
 <li><code>RootSystem( </code><var>U</var><code> ) M</code>
 <p>
 This  method is similar  to the  method <code>RootSystem</code>  for semisimple  Lie
-algebras (see Section <a href="https://www.gap-system.org/Manuals/doc/ref/chap64.html#X83F829017D46C544">Semisimple  Lie Algebras and Root  Systems</a> in
+algebras (see Section <a href="https://docs.gap-system.org/doc/ref/chap64.html#X83F829017D46C544">Semisimple  Lie Algebras and Root  Systems</a> in
 the <font face="Gill Sans,Helvetica,Arial">GAP</font> Reference Manual for further information).
 <p>
 <code>RootSystem</code> returns the underlying root system of the unipotent subgroup
@@ -293,7 +293,7 @@ gap&gt; One( U_G2 );
 <var>roots</var> should be a list of root numbers, i.e. integers from the range 1,
 ...,  <code>Length(PositiveRoots(RootSystem(</code><var>U</var><code>)))</code>. And <var>felems</var> a list  of
 corresponding ring elements or indeterminates over that ring  (see <font face="Gill Sans,Helvetica,Arial">GAP</font>
-Reference   Manual,   <a href="https://www.gap-system.org/Manuals/doc/ref/chap66.html#X79D0380D7FA39F7D">Indeterminate</a>  for  general   information  on
+Reference   Manual,   <a href="https://docs.gap-system.org/doc/ref/chap66.html#X79D0380D7FA39F7D">Indeterminate</a>  for  general   information  on
 indeterminates  or  section  <a href="CHAP002.htm#SECT004">Symbolic computation</a>  of  this  manual for
 examples).
 <p>
@@ -330,7 +330,7 @@ subgroup  <var>U</var>  with  representation  <code>IsUnipotChevRepByFundamental
 <var>roots</var>      should      be      a     list      of      elements      of
 <code>PositiveRootsFC(RootSystem(</code><var>U</var><code>))</code>.   And   <var>felems</var>    a    list    of
 corresponding ring elements or indeterminates over that ring  (see <font face="Gill Sans,Helvetica,Arial">GAP</font>
-Reference   Manual,   <a href="https://www.gap-system.org/Manuals/doc/ref/chap66.html#X79D0380D7FA39F7D">Indeterminate</a>  for  general   information  on
+Reference   Manual,   <a href="https://docs.gap-system.org/doc/ref/chap66.html#X79D0380D7FA39F7D">Indeterminate</a>  for  general   information  on
 indeterminates  or  section  <a href="CHAP002.htm#SECT004">Symbolic computation</a>  of  this  manual for
 examples).
 <p>
@@ -434,7 +434,7 @@ compatibility only. They may be removed at any time.
 <li><code>CanonicalForm( </code><var>x</var><code> ) A</code>
 <p>
 <code>CanonicalForm</code>  returns the  canonical form of <var>x</var>. For more information
-on the canonical form  see Carter <a href="biblio.htm#Carter72"><cite>Carter72</cite></a>, Theorem 5.3.3 (ii). It
+on the canonical form  see Carter <a href="biblio.htm#Car72"><cite>Car72</cite></a>, Theorem 5.3.3 (ii). It
 says:
 <p>
 Each  element of  a unipotent subgroup <i>U</i> of a Chevalley group with root
@@ -458,7 +458,7 @@ So  if  we  call  the  positive  roots  <i>r</i><sub>1</sub>,...,<i>r</i><sub>6<
 <li><code>ViewObj( </code><var>x</var><code> ) M</code>
 <p>
 Special  methods for  unipotent elements. (see <font face="Gill Sans,Helvetica,Arial">GAP</font>  Reference  Manual,
-section  <a href="https://www.gap-system.org/Manuals/doc/ref/chap6.html#X8074A8387C9DB9A8">View  and  Print</a>  for  general  information on  <code>View</code> and
+section  <a href="https://docs.gap-system.org/doc/ref/chap6.html#X8074A8387C9DB9A8">View  and  Print</a>  for  general  information on  <code>View</code> and
 <code>Print</code>). The output depends on the representation of <var>x</var>.
 <p>
 <pre>
@@ -484,7 +484,7 @@ identical</strong> to <var>x</var> but it  is <strong>equal</strong> to <var>x</
 <code>=</code>. <strong>Note</strong> that <code>CanonicalForm</code> and  <code>Inverse</code>  of  <var>x</var>  (if known)  are
 identical to <code>CanonicalForm</code> and <code>Inverse</code> of the returned object.
 <p>
-(See <font face="Gill Sans,Helvetica,Arial">GAP</font> Reference  Manual,  section <a href="https://www.gap-system.org/Manuals/doc/ref/chap12.html#X786B942B82D684BD">Duplication of Objects</a>  for
+(See <font face="Gill Sans,Helvetica,Arial">GAP</font> Reference  Manual,  section <a href="https://docs.gap-system.org/doc/ref/chap12.html#X786B942B82D684BD">Duplication of Objects</a>  for
 further information on copyability)
 <p>
 <a name = "SSEC003.11"></a>
@@ -638,7 +638,7 @@ Special method for a unipotent subgroup and a unipotent element.
 In  some  cases,  calculation  with explicite  elements  is  not  enough.
 <font face="Gill Sans,Helvetica,Arial">Unipot</font>  povides a  way  to  do  symbolic calculations  with  unipotent
 elements for this  purpose.  This is  done by using  indeterminates  (see
-<font face="Gill Sans,Helvetica,Arial">GAP</font> Reference Manual, <a href="https://www.gap-system.org/Manuals/doc/ref/chap66.html#X7A8FADCD875826DA">Indeterminates</a> for  more information) over
+<font face="Gill Sans,Helvetica,Arial">GAP</font> Reference Manual, <a href="https://docs.gap-system.org/doc/ref/chap66.html#X7A8FADCD875826DA">Indeterminates</a> for  more information) over
 the underlying field instead of the field elements.
 <p>
 <pre>
@@ -659,8 +659,7 @@ x_{[ 1, 0 ]}( -b ) * x_{[ 0, 1 ]}( -c ) * x_{[ 1, 1 ]}( b*c ) *
 x_{[ 2, 1 ]}( -b^2*c ) * x_{[ 3, 1 ]}( -a+b^3*c ) * x_{[ 3, 2 ]}( b^3*c^2 )
 </pre>
 <p>
-<p>
 [<a href = "chapters.htm">Up</a>] [<a href ="CHAP001.htm">Previous</a>] [<a href = "theindex.htm">Index</a>]
 <P>
-<address>unipot manual<br>February 2022
+<address>unipot manual<br>July 2024
 </address></body></html>

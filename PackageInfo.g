@@ -10,8 +10,8 @@ SetPackageInfo(
   rec(
     PackageName     := "Unipot",
     Subtitle        := "Computing with elements of unipotent subgroups of Chevalley groups",
-    Version         := "1.5",
-    Date            := "22/02/2022", # dd/mm/yyyy format
+    Version         := "1.6",
+    Date            := "04/07/2024", # dd/mm/yyyy format
     License         := "GPL-2.0-or-later",
     PackageWWWHome  := "https://gap-packages.github.io/unipot/",
     README_URL      := Concatenation( ~.PackageWWWHome, "README.md" ),
@@ -33,23 +33,23 @@ SetPackageInfo(
         IsAuthor      := true,
         IsMaintainer  := false,
         Email         := "sergei@sergei-haller.de",
-        WWWHome       := "http://www.sergei-haller.de",
+        WWWHome       := "https://www.sergei-haller.de",
       ),
       rec(
         LastName      := "Horn",
         FirstNames    := "Max",
         IsAuthor      := false,
         IsMaintainer  := true,
-        Email         := "horn@mathematik.uni-kl.de",
+        Email         := "mhorn@rptu.de",
         WWWHome       := "https://www.quendi.de/math",
         PostalAddress := Concatenation(
                            "Fachbereich Mathematik\n",
-                           "TU Kaiserslautern\n",
+                           "RPTU Kaiserslautern-Landau\n",
                            "Gottlieb-Daimler-Straße 48\n",
                            "67663 Kaiserslautern\n",
                            "Germany" ),
         Place         := "Kaiserslautern, Germany",
-        Institution   := "TU Kaiserslautern"
+        Institution   := "RPTU Kaiserslautern-Landau"
       ),
     ],
     PackageDoc := rec(
