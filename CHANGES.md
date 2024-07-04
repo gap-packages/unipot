@@ -1,5 +1,13 @@
 This file describes changes in the GAP package 'unipot'.
 
+* 1.6 (2024-07-04)
+
+  - Fix citations
+  - Update citation recommendation
+  - Remove obsolete installation instructions
+  - Remove ReadPackage calls for non-existing files
+  - Update contact details
+
 * 1.5 (2022-02-22)
 
   - Fix error in GeneratorsOfGroup for unipotent groups
