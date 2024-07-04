@@ -9,4 +9,3 @@
 # read the implementation part.
 ReadPackage( "unipot", "lib/rootsys.gi");
 ReadPackage( "unipot", "lib/unipot.gi");
-ReadPackage( "unipot", "lib/newstuff.gi");

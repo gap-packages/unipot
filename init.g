@@ -9,4 +9,3 @@
 # read the declaration part.
 ReadPackage( "unipot", "lib/rootsys.gd");
 ReadPackage( "unipot", "lib/unipot.gd");
-ReadPackage( "unipot", "lib/newstuff.gd");
