@@ -59,7 +59,6 @@ SetPackageInfo(
       HTMLStart        := "htm/chapters.htm",
       PDFFile          := "doc/manual.pdf",
       SixFile          := "doc/manual.six",
-      Autoload         := true
     ),
     Dependencies := rec(
       GAP                    := ">=4.7",
