@@ -56,8 +56,8 @@ SetPackageInfo(
     PackageDoc := rec(
       BookName         := "unipot",
       LongTitle        := "Computing with elements of unipotent subgroups of Chevalley groups",
-      ArchiveURLSubset := ["doc","htm"],
-      HTMLStart        := "htm/chapters.htm",
+      ArchiveURLSubset := ["doc"],
+      HTMLStart        := "doc/chap0_mj.html",
       PDFFile          := "doc/manual.pdf",
       SixFile          := "doc/manual.six",
     ),
