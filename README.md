@@ -5,7 +5,7 @@
 
 The `Unipot` package provides GAP with the ability to compute with
 elements of unipotent subgroups of Chevalley groups, but also some
-properties of this groups.
+properties of these groups.
 
 
 ## Installing UNIPOT
