@@ -10,13 +10,13 @@
 #
 gap> START_TEST("unipot01.tst");
 
-# doc/unipot.xml:76-81
+# doc/unipot.xml:70-75
 gap> U_G2 := UnipotChevSubGr("G", 2, Rationals);
 <Unipotent subgroup of a Chevalley group of type G2 over Rationals>
 gap> IsUnipotChevSubGr(U_G2);
 true
 
-# doc/unipot.xml:123-130
+# doc/unipot.xml:117-124
 gap> SetInfoLevel( UnipotChevInfo, 2 );
 gap> Size( UnipotChevSubGr("E", 8, GF(7)) );
 #I  The order of this group is 7^120 which is
@@ -24,7 +24,7 @@ gap> Size( UnipotChevSubGr("E", 8, GF(7)) );
 437263620645695945672001
 gap> SetInfoLevel( UnipotChevInfo, 1 );
 
-# doc/unipot.xml:142-149
+# doc/unipot.xml:136-143
 gap> R_G2 := RootSystem(U_G2);
 <root system of rank 2>
 gap> IsRootSystem(last);
@@ -32,7 +32,7 @@ true
 gap> SimpleSystem(R_G2);
 [ [ 2, -1 ], [ -3, 2 ] ]
 
-# doc/unipot.xml:164-177
+# doc/unipot.xml:158-171
 gap> U_E6 := UnipotChevSubGr("E",6,GF(2));
 <Unipotent subgroup of a Chevalley group of type E6 over GF(2)>
 gap> R_E6 := RootSystem(U_E6);
@@ -46,15 +46,15 @@ gap> PositiveRootsFC(R_E6){[1..6]};
 gap> PositiveRootsFC(R_E6)[Length(PositiveRootsFC(R_E6))]; # the highest root
 [ 1, 2, 2, 3, 2, 1 ]
 
-# doc/unipot.xml:195-199
+# doc/unipot.xml:189-193
 gap> Representative(U_G2);
 x_{1}( t_1 ) * x_{2}( t_2 ) * x_{3}( t_3 ) * x_{4}( t_4 ) * x_{5}( t_5 ) * x_{\
 6}( t_6 )
 
-# doc/unipot.xml:252-254
+# doc/unipot.xml:246-248
 gap> UNIPOT_DEFAULT_REP := IsUnipotChevRepByFundamentalCoeffs;;
 
-# doc/unipot.xml:286-293
+# doc/unipot.xml:280-287
 gap> IsIdenticalObj( UnipotChevElemByRN, UnipotChevElemByRootNumbers );
 true
 gap> y := UnipotChevElemByRootNumbers(U_G2, [1,5], [2,7] );
@@ -62,7 +62,7 @@ x_{1}( 2 ) * x_{5}( 7 )
 gap> x := UnipotChevElemByRootNumbers(U_G2, 1, 2);
 x_{1}( 2 )
 
-# doc/unipot.xml:323-330
+# doc/unipot.xml:317-324
 gap> PositiveRootsFC(RootSystem(U_G2));
 [ [ 1, 0 ], [ 0, 1 ], [ 1, 1 ], [ 2, 1 ], [ 3, 1 ], [ 3, 2 ] ]
 gap> y1 := UnipotChevElemByFundamentalCoeffs( U_G2, [[ 1, 0 ], [ 3, 1 ]], [2,7] );
@@ -70,7 +70,7 @@ x_{[ 1, 0 ]}( 2 ) * x_{[ 3, 1 ]}( 7 )
 gap> x1 := UnipotChevElemByFundamentalCoeffs( U_G2, [ 1, 0 ], 2 );
 x_{[ 1, 0 ]}( 2 )
 
-# doc/unipot.xml:357-364
+# doc/unipot.xml:351-358
 gap> PositiveRoots(RootSystem(U_G2));
 [ [ 2, -1 ], [ -3, 2 ], [ -1, 1 ], [ 1, 0 ], [ 3, -1 ], [ 0, 1 ] ]
 gap> y2 := UnipotChevElemByRoots( U_G2, [[ 2, -1 ], [ 3, -1 ]], [2,7] );
@@ -78,7 +78,7 @@ x_{[ 2, -1 ]}( 2 ) * x_{[ 3, -1 ]}( 7 )
 gap> x2 := UnipotChevElemByRoots( U_G2, [ 2, -1 ], 2 );
 x_{[ 2, -1 ]}( 2 )
 
-# doc/unipot.xml:382-393
+# doc/unipot.xml:376-387
 gap> x;
 x_{1}( 2 )
 gap> x1 := UnipotChevElemByFundamentalCoeffs( x );
@@ -90,14 +90,14 @@ gap> x2 := UnipotChevElemByFundamentalCoeffs( x1 );;
 gap> IsIdenticalObj(x1, x2);
 true
 
-# doc/unipot.xml:421-427
+# doc/unipot.xml:415-421
 gap> z := UnipotChevElemByFC( U_G2, [[0,1], [1,0]], [3,2]);
 x_{[ 0, 1 ]}( 3 ) * x_{[ 1, 0 ]}( 2 )
 gap> CanonicalForm(z);
 x_{[ 1, 0 ]}( 2 ) * x_{[ 0, 1 ]}( 3 ) * x_{[ 1, 1 ]}( 6 ) * x_{
 [ 2, 1 ]}( 12 ) * x_{[ 3, 1 ]}( 24 ) * x_{[ 3, 2 ]}( -72 )
 
-# doc/unipot.xml:477-490
+# doc/unipot.xml:471-484
 gap> y := UnipotChevElemByRN( U_G2, [1,5], [2,7] );
 x_{1}( 2 ) * x_{5}( 7 )
 gap> z := UnipotChevElemByRN( U_G2, [5,1], [7,2] );
@@ -111,14 +111,14 @@ gap> y=z;
 true
 gap> SetInfoLevel( UnipotChevInfo, 1 );
 
-# doc/unipot.xml:517-523
+# doc/unipot.xml:511-517
 gap> y;z;
 x_{1}( 2 ) * x_{5}( 7 )
 x_{5}( 7 ) * x_{1}( 2 )
 gap> y*z;
 x_{1}( 2 ) * x_{5}( 14 ) * x_{1}( 2 )
 
-# doc/unipot.xml:526-535
+# doc/unipot.xml:520-529
 gap> x; x1; x=x1;
 x_{1}( 2 )
 x_{[ 1, 0 ]}( 2 )
@@ -128,7 +128,7 @@ x_{1}( 4 )
 gap> x1 * x;
 x_{[ 1, 0 ]}( 4 )
 
-# doc/unipot.xml:597-605
+# doc/unipot.xml:591-599
 gap> x := UnipotChevElemByRN( U_G2, [1,5,1], [2,7,-2] );
 x_{1}( 2 ) * x_{5}( 7 ) * x_{1}( -2 )
 gap> IsRootElement(x);

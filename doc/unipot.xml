@@ -21,26 +21,20 @@ this <C>InfoClass</C> is set to  1 by default and can be changed to  any level
 by <C>SetInfoLevel( UnipotChevInfo, <A>n</A> )</C>.
 <P/>
 The following levels are used throughout the package:
-<List>
-<Mark>1.</Mark>
+<Enum>
 <Item>nothing is printed.</Item>
-<Mark>2.</Mark>
 <Item>When calculating the order of a finite unipotent subgroup, the power
     presentation of this number is printed.
     (See <Ref Meth="Size" Label="for UnipotChevSubGr"/> for an example.)</Item>
-<Mark>3.</Mark>
 <Item>When comparing unipotent elements, report for which of them the
     canonical form must be computed.
     (See <Ref Meth="\=" Label="for UnipotChevElem"/> for an example.)</Item>
-<Mark>4.</Mark>
 <Item>nothing is printed.</Item>
-<Mark>5.</Mark>
 <Item>While calculating the canonical form, the different steps are
     printed.</Item>
-<Mark>6.</Mark>
 <Item>The process of calculating the Chevalley commutator constants is
     printed.</Item>
-</List>
+</Enum>
 </Description>
 </ManSection>
 </Section>
