@@ -6,26 +6,7 @@
 /doc/chap*_mj.html
 /doc/chap*_mj.txt
 /doc/chooser.html
-/doc/main.*
-/doc/manual.aux
-/doc/manual.bbl
-/doc/manual.blg
-/doc/manual.idx
-/doc/manual.ilg
-/doc/manual.ind
+/doc/_main.*
 /doc/manual.lab
-/doc/manual.log
-/doc/manual.pdf
 /doc/manual.six
-/doc/manual.toc
 /doc/title.xml
-
-# Output of the old plain-TeX manual; kept ignored until the leftover
-# directory is removed for good.
-/htm/
-
-/doc/manual.example*.tst
-/doc/tthmacros.tex
-/doc/tthout
-/gh-pages/
-/tmp/

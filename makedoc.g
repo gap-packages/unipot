@@ -10,8 +10,8 @@ LoadPackage("AutoDoc");
 
 # Run this from the package's root directory: gap makedoc.g
 AutoDoc(rec(
-    autodoc := rec(scan_dirs := []),
-    gapdoc := rec(main := "main", files := []),
+    autodoc := true,
+    gapdoc := true,
     extract_examples := true,
     scaffold := rec(
         includes := [
@@ -21,7 +21,7 @@ AutoDoc(rec(
         entities := rec(
             Unipot := "<Package>Unipot</Package>",
         ),
-        bib := "manual.bib",
+        bib := "unipot.bib",
     ),
 ));
 
