@@ -1,5 +1,9 @@
 This file describes changes in the GAP package 'unipot'.
 
+* 1.7 (2026-08-16)
+
+  - Convert documentation to GAPDoc/AutoDoc and fix minor errors in it
+
 * 1.6 (2024-07-04)
 
   - Fix citations
