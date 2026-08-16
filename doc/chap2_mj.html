@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<title>GAP (unipot) - Chapter 2: The GAP Package Unipot</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="GAPDoc2HTML" />
+<link rel="stylesheet" type="text/css" href="manual.css" />
+<script src="manual.js" type="text/javascript"></script>
+<script type="text/javascript">overwriteStyle();</script>
+</head>
+<body class="chap2"  onload="jscontent()">
+
+
+<div class="chlinktop"><span class="chlink1">Goto Chapter: </span><a href="chap0_mj.html">Top</a>  <a href="chap1_mj.html">1</a>  <a href="chap2_mj.html">2</a>  <a href="chapBib_mj.html">Bib</a>  <a href="chapInd_mj.html">Ind</a>  </div>
+
+<div class="chlinkprevnexttop">&nbsp;<a href="chap0_mj.html">[Top of Book]</a>&nbsp;  <a href="chap0_mj.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap1_mj.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chapBib_mj.html">[Next Chapter]</a>&nbsp;  </div>
+
+<p id="mathjaxlink" class="pcenter"><a href="chap2.html">[MathJax off]</a></p>
+<p><a id="X820B26A57AF73848" name="X820B26A57AF73848"></a></p>
+<div class="ChapSects"><a href="chap2_mj.html#X820B26A57AF73848">2 <span class="Heading">The GAP Package Unipot</span></a>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap2_mj.html#X8433DB6E8477C770">2.1 <span class="Heading">General functionality</span></a>
+</span>
+<div class="ContSSBlock">
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X7EF1437382743FCF">2.1-1 UnipotChevInfo</a></span>
+</div></div>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap2_mj.html#X7B30F5507CF01A42">2.2 <span class="Heading">Unipotent subgroups of Chevalley groups</span></a>
+</span>
+<div class="ContSSBlock">
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X780CBD38811608B1">2.2-1 IsUnipotChevSubGr</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X78DA27977EBB961A">2.2-2 UnipotChevSubGr</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X835A97FF79321586">2.2-3 PrintObj</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X803C57237DB44015">2.2-4 One</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X859A0F467E67FD57">2.2-5 Size</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X812B4CF78773BB32">2.2-6 RootSystem</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X7EB555E279DA7CEC">2.2-7 PositiveRootsFC</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X85282EF07FB2276D">2.2-8 GeneratorsOfGroup</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X865507568182424E">2.2-9 Representative</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X81FD89C87CE903B4">2.2-10 CentralElement</a></span>
+</div></div>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap2_mj.html#X870FECE67F9708C7">2.3 <span class="Heading">Elements of unipotent subgroups of Chevalley groups</span></a>
+</span>
+<div class="ContSSBlock">
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X867A5AC87AC00020">2.3-1 IsUnipotChevElem</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X7D65669882275F4C">2.3-2 IsUnipotChevRepByRootNumbers</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X84C52F4384BD293A">2.3-3 UNIPOT_DEFAULT_REP</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X790EF4D5855F8555">2.3-4 UnipotChevElemByRootNumbers</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X85C2233E825A6615">2.3-5 UnipotChevElemByFundamentalCoeffs</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X868D7C5C814A7C0D">2.3-6 UnipotChevElemByRoots</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X7A117530801114DA">2.3-7 UnipotChevElemByRootNumbers</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X7A7249E478AC2F2E">2.3-8 CanonicalForm</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X7D5C6EB37A5AF087">2.3-9 PrintObj</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X7BF9ABBF8760BB20">2.3-10 ShallowCopy</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X83E1A03F794E32F2"><code>2.3-11 \=</code></a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X85B7D38B7E3E41FB"><code>2.3-12 \&lt;</code></a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X83F980E481730AAE"><code>2.3-13 \*</code></a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X82ECCB60802E7767">2.3-14 OneOp</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X7CC8B45A83CBB77A">2.3-15 Inverse</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X814D78347858EC13">2.3-16 IsOne</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X81C09711856D4D9A"><code>2.3-17 \^</code></a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X840E6004809C0F94"><code>2.3-18 \^</code></a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X816830DA7AF4CB7B">2.3-19 Comm</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X7A3A55E67F14E304">2.3-20 IsRootElement</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X81EFBA9F7F097C6C">2.3-21 IsCentral</a></span>
+</div></div>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap2_mj.html#X7EF30D0A7FC3AD10">2.4 <span class="Heading">Symbolic computation</span></a>
+</span>
+</div>
+</div>
+
+<h3>2 <span class="Heading">The GAP Package Unipot</span></h3>
+
+<p>This chapter describes the package <strong class="pkg">Unipot</strong>. Mainly, the package provides the ability to compute with elements of unipotent subgroups of Chevalley groups, but also some properties of these groups.</p>
+
+<p>In this chapter we will refer to unipotent subgroups of Chevalley groups as <q>unipotent subgroups</q> and to elements of unipotent subgroups as <q>unipotent elements</q>. Specifically, we only consider unipotent subgroups generated by all positive root elements.</p>
+
+<p><a id="X8433DB6E8477C770" name="X8433DB6E8477C770"></a></p>
+
+<h4>2.1 <span class="Heading">General functionality</span></h4>
+
+<p>In this section we will describe the general functionality provided by this package.</p>
+
+<p><a id="X7EF1437382743FCF" name="X7EF1437382743FCF"></a></p>
+
+<h5>2.1-1 UnipotChevInfo</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnipotChevInfo</code></td><td class="tdright">(&nbsp;info class&nbsp;)</td></tr></table></div>
+<p><code class="code">UnipotChevInfo</code> is an <code class="code">InfoClass</code> used in this package. <code class="code">InfoLevel</code> of this <code class="code">InfoClass</code> is set to 1 by default and can be changed to any level by <code class="code">SetInfoLevel( UnipotChevInfo, <var class="Arg">n</var> )</code>.</p>
+
+<p>The following levels are used throughout the package:</p>
+
+<ol>
+<li><p>nothing is printed.</p>
+
+</li>
+<li><p>When calculating the order of a finite unipotent subgroup, the power presentation of this number is printed. (See <code class="func">Size</code> (<a href="chap2_mj.html#X859A0F467E67FD57"><span class="RefLink">2.2-5</span></a>) for an example.)</p>
+
+</li>
+<li><p>When comparing unipotent elements, report for which of them the canonical form must be computed. (See <code class="func">\=</code> (<a href="chap2_mj.html#X83E1A03F794E32F2"><span class="RefLink">2.3-11</span></a>) for an example.)</p>
+
+</li>
+<li><p>nothing is printed.</p>
+
+</li>
+<li><p>While calculating the canonical form, the different steps are printed.</p>
+
+</li>
+<li><p>The process of calculating the Chevalley commutator constants is printed.</p>
+
+</li>
+</ol>
+<p><a id="X7B30F5507CF01A42" name="X7B30F5507CF01A42"></a></p>
+
+<h4>2.2 <span class="Heading">Unipotent subgroups of Chevalley groups</span></h4>
+
+<p>In this section we will describe the functionality for unipotent subgroups provided by this package.</p>
+
+<p><a id="X780CBD38811608B1" name="X780CBD38811608B1"></a></p>
+
+<h5>2.2-1 IsUnipotChevSubGr</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsUnipotChevSubGr</code>( <var class="Arg">grp</var> )</td><td class="tdright">(&nbsp;category&nbsp;)</td></tr></table></div>
+<p>Category for unipotent subgroups.</p>
+
+<p><a id="X78DA27977EBB961A" name="X78DA27977EBB961A"></a></p>
+
+<h5>2.2-2 UnipotChevSubGr</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnipotChevSubGr</code>( <var class="Arg">type</var>, <var class="Arg">n</var>, <var class="Arg">F</var> )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
+<p><code class="code">UnipotChevSubGr</code> returns the unipotent subgroup <span class="SimpleMath">\(U\)</span> of the Chevalley group of type <var class="Arg">type</var>, rank <var class="Arg">n</var> over the ring <var class="Arg">F</var>.</p>
+
+<p><var class="Arg">type</var> must be one of <code class="code">"A"</code>, <code class="code">"B"</code>, <code class="code">"C"</code>, <code class="code">"D"</code>, <code class="code">"E"</code>, <code class="code">"F"</code>, <code class="code">"G"</code>.</p>
+
+<p>For the type <code class="code">"A"</code>, <var class="Arg">n</var> must be a positive integer.</p>
+
+<p>For the types <code class="code">"B"</code> and <code class="code">"C"</code>, <var class="Arg">n</var> must be a positive integer <span class="SimpleMath">\(\geq 2\)</span>.</p>
+
+<p>For the type <code class="code">"D"</code>, <var class="Arg">n</var> must be a positive integer <span class="SimpleMath">\(\geq 4\)</span>.</p>
+
+<p>For the type <code class="code">"E"</code>, <var class="Arg">n</var> must be one of <span class="SimpleMath">\(6, 7, 8\)</span>.</p>
+
+<p>For the type <code class="code">"F"</code>, <var class="Arg">n</var> must be <span class="SimpleMath">\(4\)</span>.</p>
+
+<p>For the type <code class="code">"G"</code>, <var class="Arg">n</var> must be <span class="SimpleMath">\(2\)</span>.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">U_G2 := UnipotChevSubGr("G", 2, Rationals);</span>
+&lt;Unipotent subgroup of a Chevalley group of type G2 over Rationals&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsUnipotChevSubGr(U_G2);</span>
+true
+</pre></div>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">UnipotChevSubGr("E", 3, Rationals);</span>
+Error, &lt;n&gt; must be one of 6, 7, 8 for type E  called from
+UnipotChevFamily( type, n, F ) called from
+&lt;function&gt;( &lt;arguments&gt; ) called from read-eval-loop
+Entering break read-eval-print loop ...
+you can 'quit;' to quit to outer loop, or
+you can 'return;' to continue
+<span class="GAPbrkprompt">brk&gt;</span>
+</pre></div>
+
+<p><a id="X835A97FF79321586" name="X835A97FF79321586"></a></p>
+
+<h5>2.2-3 PrintObj</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; PrintObj</code>( <var class="Arg">U</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ViewObj</code>( <var class="Arg">U</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<p>Special methods for unipotent subgroups. (see <strong class="pkg">GAP</strong> Reference Manual, section <a href="https://docs.gap-system.org/doc/ref/chap6_mj.html#X8074A8387C9DB9A8"><span class="RefLink">Reference: View and Print</span></a> for general information on <code class="code">View</code> and <code class="code">Print</code>)</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Print(U_G2);</span>
+UnipotChevSubGr( "G", 2, Rationals )gap&gt; View(U_G2);
+&lt;Unipotent subgroup of a Chevalley group of type G2 over Rationals&gt;gap&gt;
+</pre></div>
+
+<p><a id="X803C57237DB44015" name="X803C57237DB44015"></a></p>
+
+<h5>2.2-4 One</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; One</code>( <var class="Arg">U</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; OneOp</code>( <var class="Arg">U</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<p>Special methods for unipotent subgroups. Return the identity element of the group <var class="Arg">U</var>. The returned element has representation <code class="code">UNIPOT_DEFAULT_REP</code> (see <code class="func">UNIPOT_DEFAULT_REP</code> (<a href="chap2_mj.html#X84C52F4384BD293A"><span class="RefLink">2.3-3</span></a>)).</p>
+
+<p><a id="X859A0F467E67FD57" name="X859A0F467E67FD57"></a></p>
+
+<h5>2.2-5 Size</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Size</code>( <var class="Arg">U</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<p><code class="code">Size</code> returns the order of a unipotent subgroup. This is a special method for unipotent subgroups using the result in Carter <a href="chapBib_mj.html#biBCar72">[Car89]</a>, Theorem 5.3.3 (ii).</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SetInfoLevel( UnipotChevInfo, 2 );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Size( UnipotChevSubGr("E", 8, GF(7)) );</span>
+#I  The order of this group is 7^120 which is
+258086210989349276047917817413172383631691140276099547911280598425927853437317\
+437263620645695945672001
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SetInfoLevel( UnipotChevInfo, 1 );</span>
+</pre></div>
+
+<p><a id="X812B4CF78773BB32" name="X812B4CF78773BB32"></a></p>
+
+<h5>2.2-6 RootSystem</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; RootSystem</code>( <var class="Arg">U</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<p>This method is similar to the method <code class="code">RootSystem</code> for semisimple Lie algebras (see Section <a href="https://docs.gap-system.org/doc/ref/chap64_mj.html#X83F829017D46C544"><span class="RefLink">Reference: Semisimple Lie Algebras and Root Systems</span></a> in the <strong class="pkg">GAP</strong> Reference Manual for further information).</p>
+
+<p><code class="code">RootSystem</code> returns the underlying root system of the unipotent subgroup <var class="Arg">U</var>. The returned object is from the category <code class="code">IsRootSystem</code>:</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">R_G2 := RootSystem(U_G2);</span>
+&lt;root system of rank 2&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsRootSystem(last);</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SimpleSystem(R_G2);</span>
+[ [ 2, -1 ], [ -3, 2 ] ]
+</pre></div>
+
+<p>In addition to the properties and attributes described in the Reference Manual, the following attributes are installed for the Root Systems by the package <strong class="pkg">Unipot</strong>:</p>
+
+<p><a id="X7EB555E279DA7CEC" name="X7EB555E279DA7CEC"></a></p>
+
+<h5>2.2-7 PositiveRootsFC</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; PositiveRootsFC</code>( <var class="Arg">R</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; NegativeRootsFC</code>( <var class="Arg">R</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p>The list of positive resp. negative roots of the root system <var class="Arg">R</var>. Every root is represented as a list of coefficients of the linear combination in fundamental roots. E.g. let <span class="SimpleMath">\(r=\sum_{i=1}^l k_ir_i\)</span>, where <span class="SimpleMath">\(r_1, \dots, r_l\)</span> are the fundamental roots, then <span class="SimpleMath">\(r\)</span> is represented as the list <span class="SimpleMath">\([k_1, \dots, k_l]\)</span>.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">U_E6 := UnipotChevSubGr("E",6,GF(2));</span>
+&lt;Unipotent subgroup of a Chevalley group of type E6 over GF(2)&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">R_E6 := RootSystem(U_E6);</span>
+&lt;root system of rank 6&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">PositiveRoots(R_E6){[1..6]};</span>
+[ [ 2, 0, -1, 0, 0, 0 ], [ 0, 2, 0, -1, 0, 0 ], [ -1, 0, 2, -1, 0, 0 ], 
+  [ 0, -1, -1, 2, -1, 0 ], [ 0, 0, 0, -1, 2, -1 ], [ 0, 0, 0, 0, -1, 2 ] ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">PositiveRootsFC(R_E6){[1..6]};</span>
+[ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+  [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">PositiveRootsFC(R_E6)[Length(PositiveRootsFC(R_E6))]; # the highest root</span>
+[ 1, 2, 2, 3, 2, 1 ]
+</pre></div>
+
+<p><a id="X85282EF07FB2276D" name="X85282EF07FB2276D"></a></p>
+
+<h5>2.2-8 GeneratorsOfGroup</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; GeneratorsOfGroup</code>( <var class="Arg">U</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<p>This is a special Method for unipotent subgroups of finite Chevalley groups.</p>
+
+<p><a id="X865507568182424E" name="X865507568182424E"></a></p>
+
+<h5>2.2-9 Representative</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Representative</code>( <var class="Arg">U</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<p>This method returns an element of the unipotent subgroup <var class="Arg">U</var> with indeterminates instead of ring elements. Such an element could be used for symbolic computations (see <a href="chap2_mj.html#X7EF30D0A7FC3AD10"><span class="RefLink">2.4</span></a>). The returned element has representation <code class="code">UNIPOT_DEFAULT_REP</code> (see <code class="func">UNIPOT_DEFAULT_REP</code> (<a href="chap2_mj.html#X84C52F4384BD293A"><span class="RefLink">2.3-3</span></a>)).</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Representative(U_G2);</span>
+x_{1}( t_1 ) * x_{2}( t_2 ) * x_{3}( t_3 ) * x_{4}( t_4 ) * x_{5}( t_5 ) * x_{\
+6}( t_6 )
+</pre></div>
+
+<p><a id="X81FD89C87CE903B4" name="X81FD89C87CE903B4"></a></p>
+
+<h5>2.2-10 CentralElement</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CentralElement</code>( <var class="Arg">U</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p>This method returns the representative of the center of <var class="Arg">U</var> without calculating the center.</p>
+
+<p><a id="X870FECE67F9708C7" name="X870FECE67F9708C7"></a></p>
+
+<h4>2.3 <span class="Heading">Elements of unipotent subgroups of Chevalley groups</span></h4>
+
+<p>In this section we will describe the functionality for unipotent elements provided by this package.</p>
+
+<p><a id="X867A5AC87AC00020" name="X867A5AC87AC00020"></a></p>
+
+<h5>2.3-1 IsUnipotChevElem</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsUnipotChevElem</code>( <var class="Arg">elm</var> )</td><td class="tdright">(&nbsp;category&nbsp;)</td></tr></table></div>
+<p>Category for elements of a unipotent subgroup.</p>
+
+<p><a id="X7D65669882275F4C" name="X7D65669882275F4C"></a></p>
+
+<h5>2.3-2 IsUnipotChevRepByRootNumbers</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsUnipotChevRepByRootNumbers</code>( <var class="Arg">elm</var> )</td><td class="tdright">(&nbsp;representation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsUnipotChevRepByFundamentalCoeffs</code>( <var class="Arg">elm</var> )</td><td class="tdright">(&nbsp;representation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsUnipotChevRepByRoots</code>( <var class="Arg">elm</var> )</td><td class="tdright">(&nbsp;representation&nbsp;)</td></tr></table></div>
+<p><code class="code">IsUnipotChevRepByRootNumbers</code>, <code class="code">IsUnipotChevRepByFundamentalCoeffs</code> and <code class="code">IsUnipotChevRepByRoots</code> are different representations for unipotent elements.</p>
+
+<p>Roots of elements with representation <code class="code">IsUnipotChevRepByRootNumbers</code> are represented by their numbers (positions) in <code class="code">PositiveRoots(RootSystem(<var class="Arg">U</var>))</code>.</p>
+
+<p>Roots of elements with representation <code class="code">IsUnipotChevRepByFundamentalCoeffs</code> are represented by elements of <code class="code">PositiveRootsFC(RootSystem(<var class="Arg">U</var>))</code>.</p>
+
+<p>Roots of elements with representation <code class="code">IsUnipotChevRepByRoots</code> are represented by roots themselves, i.e. elements of <code class="code">PositiveRoots(RootSystem(<var class="Arg">U</var>))</code>.</p>
+
+<p>(See <code class="func">UnipotChevElemByRootNumbers</code> (<a href="chap2_mj.html#X790EF4D5855F8555"><span class="RefLink">2.3-4</span></a>), <code class="func">UnipotChevElemByFundamentalCoeffs</code> (<a href="chap2_mj.html#X85C2233E825A6615"><span class="RefLink">2.3-5</span></a>) and <code class="func">UnipotChevElemByRoots</code> (<a href="chap2_mj.html#X868D7C5C814A7C0D"><span class="RefLink">2.3-6</span></a>) for examples.)</p>
+
+<p><a id="X84C52F4384BD293A" name="X84C52F4384BD293A"></a></p>
+
+<h5>2.3-3 UNIPOT_DEFAULT_REP</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UNIPOT_DEFAULT_REP</code></td><td class="tdright">(&nbsp;global variable&nbsp;)</td></tr></table></div>
+<p>This variable contains the default representation for newly created elements, e.g. created by <code class="code">One</code> or <code class="code">Random</code>. When <strong class="pkg">Unipot</strong> is loaded, the default representation is <code class="code">IsUnipotChevRepByRootNumbers</code> and can be changed by assigning a new value to <code class="code">UNIPOT_DEFAULT_REP</code>.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">UNIPOT_DEFAULT_REP := IsUnipotChevRepByFundamentalCoeffs;;</span>
+</pre></div>
+
+<p><em>Note</em> that <strong class="pkg">Unipot</strong> doesn't check the type of this value, i.e. you may assign any value to <code class="code">UNIPOT_DEFAULT_REP</code>, which may result in errors in the following commands:</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">UNIPOT_DEFAULT_REP := 3;;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">One( U_G2 );</span>
+... Error message ...
+</pre></div>
+
+<p><a id="X790EF4D5855F8555" name="X790EF4D5855F8555"></a></p>
+
+<h5>2.3-4 UnipotChevElemByRootNumbers</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnipotChevElemByRootNumbers</code>( <var class="Arg">U</var>, <var class="Arg">roots</var>, <var class="Arg">felems</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnipotChevElemByRootNumbers</code>( <var class="Arg">U</var>, <var class="Arg">root</var>, <var class="Arg">felem</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnipotChevElemByRN</code>( <var class="Arg">U</var>, <var class="Arg">roots</var>, <var class="Arg">felems</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnipotChevElemByRN</code>( <var class="Arg">U</var>, <var class="Arg">root</var>, <var class="Arg">felem</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<p><code class="code">UnipotChevElemByRootNumbers</code> returns an element of a unipotent subgroup <var class="Arg">U</var> with representation <code class="code">IsUnipotChevRepByRootNumbers</code> (see <code class="func">IsUnipotChevRepByRootNumbers</code> (<a href="chap2_mj.html#X7D65669882275F4C"><span class="RefLink">2.3-2</span></a>)).</p>
+
+<p><var class="Arg">roots</var> should be a list of root numbers, i.e. integers from the range 1, ..., <code class="code">Length(PositiveRoots(RootSystem(<var class="Arg">U</var>)))</code>. And <var class="Arg">felems</var> a list of corresponding ring elements or indeterminates over that ring (see <strong class="pkg">GAP</strong> Reference Manual, <code class="func">Indeterminate</code> (<a href="https://docs.gap-system.org/doc/ref/chap66_mj.html#X79D0380D7FA39F7D"><span class="RefLink">Reference: Indeterminate</span></a>) for general information on indeterminates or section <a href="chap2_mj.html#X7EF30D0A7FC3AD10"><span class="RefLink">2.4</span></a> of this manual for examples).</p>
+
+<p>The second variant of <code class="code">UnipotChevElemByRootNumbers</code> is an abbreviation for the first one if <var class="Arg">roots</var> and <var class="Arg">felems</var> contain only one element.</p>
+
+<p><code class="code">UnipotChevElemByRN</code> is just a synonym for <code class="code">UnipotChevElemByRootNumbers</code>.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsIdenticalObj( UnipotChevElemByRN, UnipotChevElemByRootNumbers );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">y := UnipotChevElemByRootNumbers(U_G2, [1,5], [2,7] );</span>
+x_{1}( 2 ) * x_{5}( 7 )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x := UnipotChevElemByRootNumbers(U_G2, 1, 2);</span>
+x_{1}( 2 )
+</pre></div>
+
+<p>In this example we create two elements: <span class="SimpleMath">\(x_{r_1}( 2 ) . x_{r_5}( 7 )\)</span> and <span class="SimpleMath">\(x_{r_1}( 2 )\)</span>, where <span class="SimpleMath">\(r_i, i = 1, \dots, 6\)</span> are the positive roots in <code class="code">PositiveRoots(RootSystem(<var class="Arg">U</var>))</code> and <span class="SimpleMath">\(x_{r_i}(t), i = 1, \dots, 6\)</span> the corresponding root elements.</p>
+
+<p><a id="X85C2233E825A6615" name="X85C2233E825A6615"></a></p>
+
+<h5>2.3-5 UnipotChevElemByFundamentalCoeffs</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnipotChevElemByFundamentalCoeffs</code>( <var class="Arg">U</var>, <var class="Arg">roots</var>, <var class="Arg">felems</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnipotChevElemByFundamentalCoeffs</code>( <var class="Arg">U</var>, <var class="Arg">root</var>, <var class="Arg">felem</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnipotChevElemByFC</code>( <var class="Arg">U</var>, <var class="Arg">roots</var>, <var class="Arg">felems</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnipotChevElemByFC</code>( <var class="Arg">U</var>, <var class="Arg">root</var>, <var class="Arg">felem</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<p><code class="code">UnipotChevElemByFundamentalCoeffs</code> returns an element of a unipotent subgroup <var class="Arg">U</var> with representation <code class="code">IsUnipotChevRepByFundamentalCoeffs</code> (see <code class="func">IsUnipotChevRepByFundamentalCoeffs</code> (<a href="chap2_mj.html#X7D65669882275F4C"><span class="RefLink">2.3-2</span></a>)).</p>
+
+<p><var class="Arg">roots</var> should be a list of elements of <code class="code">PositiveRootsFC(RootSystem(<var class="Arg">U</var>))</code>. And <var class="Arg">felems</var> a list of corresponding ring elements or indeterminates over that ring (see <strong class="pkg">GAP</strong> Reference Manual, <code class="func">Indeterminate</code> (<a href="https://docs.gap-system.org/doc/ref/chap66_mj.html#X79D0380D7FA39F7D"><span class="RefLink">Reference: Indeterminate</span></a>) for general information on indeterminates or section <a href="chap2_mj.html#X7EF30D0A7FC3AD10"><span class="RefLink">2.4</span></a> of this manual for examples).</p>
+
+<p>The second variant of <code class="code">UnipotChevElemByFundamentalCoeffs</code> is an abbreviation for the first one if <var class="Arg">roots</var> and <var class="Arg">felems</var> contain only one element.</p>
+
+<p><code class="code">UnipotChevElemByFC</code> is just a synonym for <code class="code">UnipotChevElemByFundamentalCoeffs</code>.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">PositiveRootsFC(RootSystem(U_G2));</span>
+[ [ 1, 0 ], [ 0, 1 ], [ 1, 1 ], [ 2, 1 ], [ 3, 1 ], [ 3, 2 ] ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">y1 := UnipotChevElemByFundamentalCoeffs( U_G2, [[ 1, 0 ], [ 3, 1 ]], [2,7] );</span>
+x_{[ 1, 0 ]}( 2 ) * x_{[ 3, 1 ]}( 7 )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x1 := UnipotChevElemByFundamentalCoeffs( U_G2, [ 1, 0 ], 2 );</span>
+x_{[ 1, 0 ]}( 2 )
+</pre></div>
+
+<p>In this example we create the same two elements as in <code class="func">UnipotChevElemByRootNumbers</code> (<a href="chap2_mj.html#X790EF4D5855F8555"><span class="RefLink">2.3-4</span></a>): <span class="SimpleMath">\(x_{[ 1, 0 ]}( 2 ) . x_{[ 3, 1 ]}( 7 )\)</span> and <span class="SimpleMath">\(x_{[ 1, 0 ]}( 2 )\)</span>, where <span class="SimpleMath">\([ 1, 0 ] = 1r_1 + 0r_2 = r_1\)</span> and <span class="SimpleMath">\([ 3, 1 ] = 3r_1 + 1r_2=r_5\)</span> are the first and the fifth positive roots of <code class="code">PositiveRootsFC(RootSystem(<var class="Arg">U</var>))</code> respectively.</p>
+
+<p><a id="X868D7C5C814A7C0D" name="X868D7C5C814A7C0D"></a></p>
+
+<h5>2.3-6 UnipotChevElemByRoots</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnipotChevElemByRoots</code>( <var class="Arg">U</var>, <var class="Arg">roots</var>, <var class="Arg">felems</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnipotChevElemByRoots</code>( <var class="Arg">U</var>, <var class="Arg">root</var>, <var class="Arg">felem</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnipotChevElemByR</code>( <var class="Arg">U</var>, <var class="Arg">roots</var>, <var class="Arg">felems</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnipotChevElemByR</code>( <var class="Arg">U</var>, <var class="Arg">root</var>, <var class="Arg">felem</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<p><code class="code">UnipotChevElemByRoots</code> returns an element of a unipotent subgroup <var class="Arg">U</var> with representation <code class="code">IsUnipotChevRepByRoots</code> (see <code class="func">IsUnipotChevRepByRoots</code> (<a href="chap2_mj.html#X7D65669882275F4C"><span class="RefLink">2.3-2</span></a>)).</p>
+
+<p><var class="Arg">roots</var> should be a list of elements of <code class="code">PositiveRoots(RootSystem(<var class="Arg">U</var>))</code>. And <var class="Arg">felems</var> a list of corresponding ring elements or indeterminates over that ring (see <strong class="pkg">GAP</strong> Reference Manual, <code class="func">Indeterminate</code> (<a href="https://docs.gap-system.org/doc/ref/chap66_mj.html#X79D0380D7FA39F7D"><span class="RefLink">Reference: Indeterminate</span></a>) for general information on indeterminates or section <a href="chap2_mj.html#X7EF30D0A7FC3AD10"><span class="RefLink">2.4</span></a> of this manual for examples).</p>
+
+<p>The second variant of <code class="code">UnipotChevElemByRoots</code> is an abbreviation for the first one if <var class="Arg">roots</var> and <var class="Arg">felems</var> contain only one element.</p>
+
+<p><code class="code">UnipotChevElemByR</code> is just a synonym for <code class="code">UnipotChevElemByRoots</code>.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">PositiveRoots(RootSystem(U_G2));</span>
+[ [ 2, -1 ], [ -3, 2 ], [ -1, 1 ], [ 1, 0 ], [ 3, -1 ], [ 0, 1 ] ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">y2 := UnipotChevElemByRoots( U_G2, [[ 2, -1 ], [ 3, -1 ]], [2,7] );</span>
+x_{[ 2, -1 ]}( 2 ) * x_{[ 3, -1 ]}( 7 )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x2 := UnipotChevElemByRoots( U_G2, [ 2, -1 ], 2 );</span>
+x_{[ 2, -1 ]}( 2 )
+</pre></div>
+
+<p>In this example we create again the two elements as in previous examples: <span class="SimpleMath">\(x_{[ 2, -1 ]}( 2 ) . x_{[ 3, -1 ]}( 7 )\)</span> and <span class="SimpleMath">\(x_{[ 2, -1 ]}( 2 )\)</span>, where <span class="SimpleMath">\([ 2, -1 ] = r_1\)</span> and <span class="SimpleMath">\([ 3, -1 ] = r_5\)</span> are the first and the fifth positive roots of <code class="code">PositiveRoots(RootSystem( <var class="Arg">U</var>))</code> respectively.</p>
+
+<p><a id="X7A117530801114DA" name="X7A117530801114DA"></a></p>
+
+<h5>2.3-7 UnipotChevElemByRootNumbers</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnipotChevElemByRootNumbers</code>( <var class="Arg">x</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnipotChevElemByFundamentalCoeffs</code>( <var class="Arg">x</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnipotChevElemByRoots</code>( <var class="Arg">x</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<p>These three methods are provided for converting a unipotent element to the respective representation.</p>
+
+<p>If <var class="Arg">x</var> has already the required representation, then <var class="Arg">x</var> itself is returned. Otherwise a <em>new</em> element with the required representation is generated.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x;</span>
+x_{1}( 2 )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x1 := UnipotChevElemByFundamentalCoeffs( x );</span>
+x_{[ 1, 0 ]}( 2 )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsIdenticalObj(x, x1); x = x1;</span>
+false
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x2 := UnipotChevElemByFundamentalCoeffs( x1 );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsIdenticalObj(x1, x2);</span>
+true
+</pre></div>
+
+<p><em>Note:</em> If some attributes of <var class="Arg">x</var> are known (e.g <code class="code">Inverse</code> (see <code class="func">Inverse</code> (<a href="chap2_mj.html#X7CC8B45A83CBB77A"><span class="RefLink">2.3-15</span></a>)) or <code class="code">CanonicalForm</code> (see <code class="func">CanonicalForm</code> (<a href="chap2_mj.html#X7A7249E478AC2F2E"><span class="RefLink">2.3-8</span></a>))), then they are <q>converted</q> to the new representation, too.</p>
+
+
+<div class="example"><pre>
+{\fmark}UnipotChevElemByRootNumbers( &lt;U&gt;, &lt;list&gt; ) O
+{\fmark}UnipotChevElemByRoots( &lt;U&gt;, &lt;list&gt; ) O
+{\fmark}UnipotChevElemByFundamentalCoeffs( &lt;U&gt;, &lt;list&gt; ) O
+</pre></div>
+
+<p><em>DEPRECATED</em> These are old versions of <code class="code">UnipotChevElemByXX</code> (from <strong class="pkg">Unipot</strong> 1.0 and 1.1). They are deprecated now and exist for compatibility only. They may be removed at any time.</p>
+
+<p><a id="X7A7249E478AC2F2E" name="X7A7249E478AC2F2E"></a></p>
+
+<h5>2.3-8 CanonicalForm</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CanonicalForm</code>( <var class="Arg">x</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p><code class="code">CanonicalForm</code> returns the canonical form of <var class="Arg">x</var>. For more information on the canonical form see Carter <a href="chapBib_mj.html#biBCar72">[Car89]</a>, Theorem 5.3.3 (ii). It says:</p>
+
+<p>Each element of a unipotent subgroup <span class="SimpleMath">\(U\)</span> of a Chevalley group with root system <span class="SimpleMath">\(\Phi\)</span> is uniquely expressible in the form</p>
+
+<p class="center">\[
+\prod_{r_i\in\Phi^+} x_{r_i}(t_i),
+\]</p>
+
+<p>where the product is taken over all positive roots in increasing order.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">z := UnipotChevElemByFC( U_G2, [[0,1], [1,0]], [3,2]);</span>
+x_{[ 0, 1 ]}( 3 ) * x_{[ 1, 0 ]}( 2 )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">CanonicalForm(z);</span>
+x_{[ 1, 0 ]}( 2 ) * x_{[ 0, 1 ]}( 3 ) * x_{[ 1, 1 ]}( 6 ) * x_{
+[ 2, 1 ]}( 12 ) * x_{[ 3, 1 ]}( 24 ) * x_{[ 3, 2 ]}( -72 )
+</pre></div>
+
+<p>So if we call the positive roots <span class="SimpleMath">\(r_1,\dots,r_6\)</span>, we have <span class="SimpleMath">\( z = x_{r_2}(3)x_{r_1}(2) = x_{r_1}( 2 ) x_{r_2}( 3 ) x_{r_3}( 6 ) x_{r_4}( 12 ) x_{r_5}( 24 ) x_{r_6}( -72 )\)</span>.</p>
+
+<p><a id="X7D5C6EB37A5AF087" name="X7D5C6EB37A5AF087"></a></p>
+
+<h5>2.3-9 PrintObj</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; PrintObj</code>( <var class="Arg">x</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ViewObj</code>( <var class="Arg">x</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<p>Special methods for unipotent elements. (see <strong class="pkg">GAP</strong> Reference Manual, section <a href="https://docs.gap-system.org/doc/ref/chap6_mj.html#X8074A8387C9DB9A8"><span class="RefLink">Reference: View and Print</span></a> for general information on <code class="code">View</code> and <code class="code">Print</code>). The output depends on the representation of <var class="Arg">x</var>.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Print(x);</span>
+UnipotChevElemByRootNumbers( UnipotChevSubGr( "G", 2, Rationals ), \
+[ 1 ], [ 2 ] )gap&gt; View(x);
+x_{1}( 2 )gap&gt;
+</pre></div>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Print(x1);</span>
+UnipotChevElemByFundamentalCoeffs( UnipotChevSubGr( "G", 2, Rationals ), \
+[ [ 1, 0 ] ], [ 2 ] )gap&gt; View(x1);
+x_{[ 1, 0 ]}( 2 )gap&gt;
+</pre></div>
+
+<p><a id="X7BF9ABBF8760BB20" name="X7BF9ABBF8760BB20"></a></p>
+
+<h5>2.3-10 ShallowCopy</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ShallowCopy</code>( <var class="Arg">x</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<p>This is a special method for unipotent elements.</p>
+
+<p><code class="code">ShallowCopy</code> creates a copy of <var class="Arg">x</var>. The returned object is <em>not identical</em> to <var class="Arg">x</var> but it is <em>equal</em> to <var class="Arg">x</var> w.r.t. the equality operator <code class="code">=</code>. <em>Note</em> that <code class="code">CanonicalForm</code> and <code class="code">Inverse</code> of <var class="Arg">x</var> (if known) are identical to <code class="code">CanonicalForm</code> and <code class="code">Inverse</code> of the returned object.</p>
+
+<p>(See <strong class="pkg">GAP</strong> Reference Manual, section <a href="https://docs.gap-system.org/doc/ref/chap12_mj.html#X786B942B82D684BD"><span class="RefLink">Reference: Duplication of Objects</span></a> for further information on copyability)</p>
+
+<p><a id="X83E1A03F794E32F2" name="X83E1A03F794E32F2"></a></p>
+
+<h5><code>2.3-11 \=</code></h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; \=</code>( <var class="Arg">x</var>, <var class="Arg">y</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<p>Special method for unipotent elements. If <var class="Arg">x</var> and <var class="Arg">y</var> are identical or are products of the <em>same</em> root elements then <code class="keyw">true</code> is returned. Otherwise <code class="code">CanonicalForm</code> (see <code class="func">CanonicalForm</code> (<a href="chap2_mj.html#X7A7249E478AC2F2E"><span class="RefLink">2.3-8</span></a>)) of both arguments must be computed (if not already known), which may be expensive. If the canonical form of one of the elements must be calculated and <code class="code">InfoLevel</code> of <code class="code">UnipotChevInfo</code> is at least 3, the user is notified about this:</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">y := UnipotChevElemByRN( U_G2, [1,5], [2,7] );</span>
+x_{1}( 2 ) * x_{5}( 7 )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">z := UnipotChevElemByRN( U_G2, [5,1], [7,2] );</span>
+x_{5}( 7 ) * x_{1}( 2 )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SetInfoLevel( UnipotChevInfo, 3 );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">y=z;</span>
+#I  CanonicalForm for the 1st argument is not known.
+#I                    computing it may take a while.
+#I  CanonicalForm for the 2nd argument is not known.
+#I                    computing it may take a while.
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SetInfoLevel( UnipotChevInfo, 1 );</span>
+</pre></div>
+
+<p><a id="X85B7D38B7E3E41FB" name="X85B7D38B7E3E41FB"></a></p>
+
+<h5><code>2.3-12 \&lt;</code></h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; \&lt;</code>( <var class="Arg">x</var>, <var class="Arg">y</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<p>Special method for <code class="code">UnipotChevElem</code></p>
+
+<p>This is needed e.g. by <code class="code">AsSSortedList</code>.</p>
+
+<p>The ordering is computed in the following way: Let <span class="SimpleMath">\(x = x_{r_1}(s_1) ... x_{r_n}(s_n)\)</span> and <span class="SimpleMath">\(y = x_{r_1}(t_1) ... x_{r_n}(t_n)\)</span>, then</p>
+
+<p class="center">\[ x &lt; y   \Leftrightarrow  [ s_1, \dots, s_n ] &lt; [ t_1, \dots, t_n ], \]</p>
+
+<p>where the lists are compared lexicographically. e.g. for <span class="SimpleMath">\(x = x_{r_1}(1)x_{r_2}(1) = x_{r_1}(1)x_{r_2}(1)x_{r_3}(0)\)</span> (field elems: <code class="code">[ 1, 1, 0 ]</code>) and <span class="SimpleMath">\(y = x_{r_1}(1)x_{r_3}(1) = x_{r_1}(1)x_{r_2}(0)x_{r_3}(1)\)</span> (field elems: <code class="code">[ 1, 0, 1 ]</code>) we have <span class="SimpleMath">\(y &lt; x\)</span> (above lists ordered lexicographically).</p>
+
+<p><a id="X83F980E481730AAE" name="X83F980E481730AAE"></a></p>
+
+<h5><code>2.3-13 \*</code></h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; \*</code>( <var class="Arg">x</var>, <var class="Arg">y</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<p>Special method for unipotent elements. The expressions in the form <span class="SimpleMath">\(x_r(t)x_r(u)\)</span> will be reduced to <span class="SimpleMath">\(x_r(t+u)\)</span> whenever possible.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">y;z;</span>
+x_{1}( 2 ) * x_{5}( 7 )
+x_{5}( 7 ) * x_{1}( 2 )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">y*z;</span>
+x_{1}( 2 ) * x_{5}( 14 ) * x_{1}( 2 )
+</pre></div>
+
+<p><em>Note:</em> The representation of the product will be always the representation of the first argument.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x; x1; x=x1;</span>
+x_{1}( 2 )
+x_{[ 1, 0 ]}( 2 )
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x * x1;</span>
+x_{1}( 4 )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x1 * x;</span>
+x_{[ 1, 0 ]}( 4 )
+</pre></div>
+
+<p><a id="X82ECCB60802E7767" name="X82ECCB60802E7767"></a></p>
+
+<h5>2.3-14 OneOp</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; OneOp</code>( <var class="Arg">x</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<p>Special method for unipotent elements. <code class="code">OneOp</code> returns the multiplicative neutral element of <var class="Arg">x</var>. This is equal to <code class="code"><var class="Arg">x</var>^0</code>.</p>
+
+<p><a id="X7CC8B45A83CBB77A" name="X7CC8B45A83CBB77A"></a></p>
+
+<h5>2.3-15 Inverse</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Inverse</code>( <var class="Arg">x</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; InverseOp</code>( <var class="Arg">x</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<p>Special methods for unipotent elements. We are using the fact</p>
+
+<p class="center">\[
+\Bigl( x_{r_1}( t_1) . . . x_{r_m}(t_m) \Bigr)^{-1} 
+     = x_{r_m}(-t_m) . . . x_{r_1}(-t_1) . 
+\]</p>
+
+<p><a id="X814D78347858EC13" name="X814D78347858EC13"></a></p>
+
+<h5>2.3-16 IsOne</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsOne</code>( <var class="Arg">x</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<p>Special method for unipotent elements. Returns <code class="keyw">true</code> if and only if <var class="Arg">x</var> is equal to the identity element.</p>
+
+<p><a id="X81C09711856D4D9A" name="X81C09711856D4D9A"></a></p>
+
+<h5><code>2.3-17 \^</code></h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; \^</code>( <var class="Arg">x</var>, <var class="Arg">i</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<p>Integral powers of the unipotent elements are calculated by the default methods installed in <strong class="pkg">GAP</strong>. But special (more efficient) methods are installed for root elements and for the identity.</p>
+
+<p><a id="X840E6004809C0F94" name="X840E6004809C0F94"></a></p>
+
+<h5><code>2.3-18 \^</code></h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; \^</code>( <var class="Arg">x</var>, <var class="Arg">y</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<p>Conjugation of two unipotent elements, i.e. <span class="SimpleMath">\(x^y = y^{-1}xy\)</span>. The representation of the result will be the representation of <var class="Arg">x</var>.</p>
+
+<p><a id="X816830DA7AF4CB7B" name="X816830DA7AF4CB7B"></a></p>
+
+<h5>2.3-19 Comm</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Comm</code>( <var class="Arg">x</var>, <var class="Arg">y</var>[, <var class="Arg">"canonical"</var>] )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<p>Special methods for unipotent elements.</p>
+
+<p><code class="code">Comm</code> returns the commutator of <var class="Arg">x</var> and <var class="Arg">y</var>, i.e. <span class="SimpleMath">\(x^{-1} y^{-1} x y\)</span>. The second variant returns the canonical form of the commutator. In some cases it may be more efficient than <code class="code">CanonicalForm( Comm( <var class="Arg">x</var>, <var class="Arg">y</var> ) )</code></p>
+
+<p><a id="X7A3A55E67F14E304" name="X7A3A55E67F14E304"></a></p>
+
+<h5>2.3-20 IsRootElement</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsRootElement</code>( <var class="Arg">x</var> )</td><td class="tdright">(&nbsp;property&nbsp;)</td></tr></table></div>
+<p><code class="code">IsRootElement</code> returns <code class="keyw">true</code> if and only if <var class="Arg">x</var> is a root element, i.e. <span class="SimpleMath">\(x=x_{r}(t)\)</span> for some root <span class="SimpleMath">\(r\)</span>. We store this property immediately after creating objects.</p>
+
+<p><em>Note:</em> the canonical form of <var class="Arg">x</var> may be a root element even if <var class="Arg">x</var> isn't one.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x := UnipotChevElemByRN( U_G2, [1,5,1], [2,7,-2] );</span>
+x_{1}( 2 ) * x_{5}( 7 ) * x_{1}( -2 )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsRootElement(x);</span>
+false
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">CanonicalForm(x); IsRootElement(CanonicalForm(x));</span>
+x_{5}( 7 )
+true
+</pre></div>
+
+<p><a id="X81EFBA9F7F097C6C" name="X81EFBA9F7F097C6C"></a></p>
+
+<h5>2.3-21 IsCentral</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCentral</code>( <var class="Arg">U</var>, <var class="Arg">z</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
+<p>Special method for a unipotent subgroup and a unipotent element.</p>
+
+<p><a id="X7EF30D0A7FC3AD10" name="X7EF30D0A7FC3AD10"></a></p>
+
+<h4>2.4 <span class="Heading">Symbolic computation</span></h4>
+
+<p>In some cases, calculation with explicit elements is not enough. <strong class="pkg">Unipot</strong> provides a way to do symbolic calculations with unipotent elements for this purpose. This is done by using indeterminates (see <strong class="pkg">GAP</strong> Reference Manual, <a href="https://docs.gap-system.org/doc/ref/chap66_mj.html#X7A8FADCD875826DA"><span class="RefLink">Reference: Indeterminates</span></a> for more information) over the underlying field instead of the field elements.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">U_G2 := UnipotChevSubGr("G", 2, Rationals);;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">a := Indeterminate( Rationals, "a" );</span>
+a
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">b := Indeterminate( Rationals, "b", [a] );</span>
+b
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">c := Indeterminate( Rationals, "c", [a,b] );</span>
+c
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x := UnipotChevElemByFC(U_G2, [ [3,1], [1,0], [0,1] ], [a,b,c] );</span>
+x_{[ 3, 1 ]}( a ) * x_{[ 1, 0 ]}( b ) * x_{[ 0, 1 ]}( c )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">CanonicalForm(x);</span>
+x_{[ 1, 0 ]}( b ) * x_{[ 0, 1 ]}( c ) * x_{[ 3, 1 ]}( a ) * x_{
+[ 3, 2 ]}( a*c )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">CanonicalForm(x^-1);</span>
+x_{[ 1, 0 ]}( -b ) * x_{[ 0, 1 ]}( -c ) * x_{[ 1, 1 ]}( b*c ) * x_{
+[ 2, 1 ]}( -b^2*c ) * x_{[ 3, 1 ]}( b^3*c-a ) * x_{[ 3, 2 ]}( b^3*c^2 )
+</pre></div>
+
+<p> </p>
+
+
+<div class="chlinkprevnextbot">&nbsp;<a href="chap0_mj.html">[Top of Book]</a>&nbsp;  <a href="chap0_mj.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap1_mj.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chapBib_mj.html">[Next Chapter]</a>&nbsp;  </div>
+
+
+<div class="chlinkbot"><span class="chlink1">Goto Chapter: </span><a href="chap0_mj.html">Top</a>  <a href="chap1_mj.html">1</a>  <a href="chap2_mj.html">2</a>  <a href="chapBib_mj.html">Bib</a>  <a href="chapInd_mj.html">Ind</a>  </div>
+
+<hr />
+<p class="foot">generated by <a href="https://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc">GAPDoc2HTML</a></p>
+</body>
+</html>
