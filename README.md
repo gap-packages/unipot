@@ -52,7 +52,7 @@ suggestions, or if you find bugs, please report them via
    <https://github.com/gap-packages/unipot/issues>
 
 Also, we would like to hear about applications of this package.
-(See "Citing Unipot", section 3 of the manual preface.)
+(See the section "Citing Unipot" in the manual preface.)
 
 
 ## Copyright and license
