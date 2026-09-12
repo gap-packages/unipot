@@ -1,5 +1,10 @@
 This file describes changes in the GAP package 'unipot'.
 
+* Unreleased
+
+  - Spell out the ampersand in the bibliography, which the text and HTML
+    manuals rendered as a LaTeX escape
+
 * 1.7 (2026-08-16)
 
   - Convert documentation to GAPDoc/AutoDoc and fix minor errors in it
